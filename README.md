@@ -14,7 +14,6 @@ This project addresses that gap by:
 - Correlating related events across systems
 - Detecting suspicious authentication patterns indicative of credential abuse
 
----
 
 ## What This Project Does
 - Ingests Linux SSH authentication logs (`auth.log`)
@@ -24,14 +23,13 @@ This project addresses that gap by:
 - Detects credential abuse patterns using custom logic
 - Produces explainable security alerts
 
----
 
 ## Machines Involved
 - **Personal Laptop**: Log ingestion, correlation, and detection engine
 - **Linux VM (Ubuntu)**: SSH authentication log source
 - **Windows 10 VM**: Windows Security authentication log source
 
----
+
 
 ## Detection Focus
 This project is detection-driven and prioritizes behavior over individual events.
