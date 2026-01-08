@@ -1,5 +1,6 @@
-Phase 1 — SSH Brute Force (Linux)
-# Target Machine
+# Phase 1 — SSH Brute Force (Linux)
+
+### Target Machine
 - Linux VM
 
 
