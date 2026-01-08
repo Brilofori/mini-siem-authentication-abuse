@@ -3,11 +3,11 @@ Phase 1 — SSH Brute Force (Linux)
 - Linux VM
 
 
-## Source
+### Source
 - Personal laptop (or Windows VM)
 
 
-## Actions
+### Actions
 
 - Attempt SSH login with an incorrect password
 - Repeat 6–10 times
@@ -16,24 +16,25 @@ Phase 1 — SSH Brute Force (Linux)
 - Short time window (1–2 minutes)
 
 
-## Expected Evidence
+### Expected Evidence
 
 - Multiple Failed password entries in /var/log/auth.log
 - Same IP
 - Same user
 - Tight timestamps
 
-## Detection Rule Triggered
+### Detection Rule Triggered
 - Detection Rule 1 — SSH Brute Force
 
 
 
 # Phase 2 — Password Spraying
-#3 Target Machine
+
+### 3 Target Machine
 - Linux VM or Windows VM
 
 
-## Actions
+### Actions
 
 - Create 3–5 users
 - Attempt login once per user
@@ -42,14 +43,14 @@ Phase 1 — SSH Brute Force (Linux)
 - Within 5–10 minutes
 
 
-## Expected Evidence
+### Expected Evidence
 
 - Failed login attempts
 - Multiple usernames
 - Same source IP
 
 
-## Detection Rule Triggered
+### Detection Rule Triggered
 
 - Detection Rule 2 — Password Spraying
 
@@ -57,12 +58,12 @@ Phase 1 — SSH Brute Force (Linux)
 
 # Phase 3 — Success After Failure (Cross-Platform)
 
-## Target Machines
+### Target Machines
 
 - Linux VM and Windows VM
 
 
-## Actions
+### Actions
 
 - Perform several failed logins from same source
 - Then perform a successful login
@@ -70,12 +71,12 @@ Phase 1 — SSH Brute Force (Linux)
 - Same source IP
 
 
-## Expected Evidence
+### Expected Evidence
 - Failed auth events
 - Followed by success
 - Across different systems
 
 
-## Detection Rule Triggered
+### Detection Rule Triggered
 - Detection Rule 3 — Success After Failure
 
