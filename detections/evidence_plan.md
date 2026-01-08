@@ -26,7 +26,7 @@ Phase 1 — SSH Brute Force (Linux)
 ## Detection Rule Triggered
 - Detection Rule 1 — SSH Brute Force
 
----
+
 
 # Phase 2 — Password Spraying
 #3 Target Machine
@@ -53,7 +53,7 @@ Phase 1 — SSH Brute Force (Linux)
 
 - Detection Rule 2 — Password Spraying
 
----
+
 
 # Phase 3 — Success After Failure (Cross-Platform)
 
