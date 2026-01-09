@@ -821,3 +821,41 @@
 2026-01-09T18:24:58.784391+00:00 ubuntu-srv01 sshd[2636]: Accepted password for bril from 192.168.56.1 port 51658 ssh2
 2026-01-09T18:24:58.789512+00:00 ubuntu-srv01 sshd[2636]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
 2026-01-09T18:24:58.795391+00:00 ubuntu-srv01 systemd-logind[1360]: New session 53 of user bril.
+2026-01-09T18:24:59.367790+00:00 ubuntu-srv01 sshd[2693]: Received disconnect from 192.168.56.1 port 51658:11: disconnected by user
+2026-01-09T18:24:59.368294+00:00 ubuntu-srv01 sshd[2693]: Disconnected from user bril 192.168.56.1 port 51658
+2026-01-09T18:24:59.368455+00:00 ubuntu-srv01 sshd[2636]: pam_unix(sshd:session): session closed for user bril
+2026-01-09T18:24:59.374243+00:00 ubuntu-srv01 systemd-logind[1360]: Session 53 logged out. Waiting for processes to exit.
+2026-01-09T18:24:59.376758+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 53.
+2026-01-09T18:25:01.090723+00:00 ubuntu-srv01 CRON[2695]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T18:25:01.097410+00:00 ubuntu-srv01 CRON[2695]: pam_unix(cron:session): session closed for user root
+2026-01-09T18:35:01.127991+00:00 ubuntu-srv01 CRON[2706]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T18:35:01.139285+00:00 ubuntu-srv01 CRON[2706]: pam_unix(cron:session): session closed for user root
+2026-01-09T18:45:01.465659+00:00 ubuntu-srv01 CRON[2724]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T18:45:01.490592+00:00 ubuntu-srv01 CRON[2724]: pam_unix(cron:session): session closed for user root
+2026-01-09T18:55:01.523150+00:00 ubuntu-srv01 CRON[2911]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T18:55:01.550485+00:00 ubuntu-srv01 CRON[2911]: pam_unix(cron:session): session closed for user root
+2026-01-09T19:00:33.796779+00:00 ubuntu-srv01 sshd[2920]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user2
+2026-01-09T19:00:35.870797+00:00 ubuntu-srv01 sshd[2920]: Failed password for user2 from 192.168.56.1 port 56659 ssh2
+2026-01-09T19:01:20.225210+00:00 ubuntu-srv01 sshd[2920]: Connection reset by authenticating user user2 192.168.56.1 port 56659 [preauth]
+2026-01-09T19:01:33.687895+00:00 ubuntu-srv01 sshd[2922]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user3
+2026-01-09T19:01:36.334477+00:00 ubuntu-srv01 sshd[2922]: Failed password for user3 from 192.168.56.1 port 56662 ssh2
+2026-01-09T19:01:38.193743+00:00 ubuntu-srv01 sshd[2922]: Connection reset by authenticating user user3 192.168.56.1 port 56662 [preauth]
+2026-01-09T19:01:47.936958+00:00 ubuntu-srv01 sshd[2924]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user4
+2026-01-09T19:01:49.875939+00:00 ubuntu-srv01 sshd[2924]: Failed password for user4 from 192.168.56.1 port 60972 ssh2
+2026-01-09T19:01:51.403646+00:00 ubuntu-srv01 sshd[2924]: Connection reset by authenticating user user4 192.168.56.1 port 60972 [preauth]
+2026-01-09T19:02:13.785953+00:00 ubuntu-srv01 sshd[2926]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user5
+2026-01-09T19:02:15.920287+00:00 ubuntu-srv01 sshd[2926]: Failed password for user5 from 192.168.56.1 port 57098 ssh2
+2026-01-09T19:02:17.699422+00:00 ubuntu-srv01 sshd[2926]: Connection reset by authenticating user user5 192.168.56.1 port 57098 [preauth]
+2026-01-09T19:05:01.558209+00:00 ubuntu-srv01 CRON[2933]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T19:05:01.566356+00:00 ubuntu-srv01 CRON[2933]: pam_unix(cron:session): session closed for user root
+2026-01-09T19:06:51.013290+00:00 ubuntu-srv01 sshd[2938]: Accepted password for bril from 192.168.56.1 port 49760 ssh2
+2026-01-09T19:06:51.016783+00:00 ubuntu-srv01 sshd[2938]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T19:06:51.021465+00:00 ubuntu-srv01 systemd-logind[1360]: New session 59 of user bril.
+2026-01-09T19:06:51.687577+00:00 ubuntu-srv01 sshd[3037]: Received disconnect from 192.168.56.1 port 49760:11: disconnected by user
+2026-01-09T19:06:51.695448+00:00 ubuntu-srv01 sshd[3037]: Disconnected from user bril 192.168.56.1 port 49760
+2026-01-09T19:06:51.695611+00:00 ubuntu-srv01 sshd[2938]: pam_unix(sshd:session): session closed for user bril
+2026-01-09T19:06:51.699237+00:00 ubuntu-srv01 systemd-logind[1360]: Session 59 logged out. Waiting for processes to exit.
+2026-01-09T19:06:51.701295+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 59.
+2026-01-09T19:07:20.676535+00:00 ubuntu-srv01 sshd[3040]: Accepted password for bril from 192.168.56.1 port 49761 ssh2
+2026-01-09T19:07:20.680407+00:00 ubuntu-srv01 sshd[3040]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T19:07:20.686678+00:00 ubuntu-srv01 systemd-logind[1360]: New session 60 of user bril.
