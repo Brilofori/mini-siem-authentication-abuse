@@ -1,0 +1,823 @@
+2026-01-03T21:08:31.322568+00:00 ubuntu-srv01 useradd[822]: new group: name=bril, GID=1000
+2026-01-03T21:08:31.322729+00:00 ubuntu-srv01 useradd[822]: new user: name=bril, UID=1000, GID=1000, home=/home/bril, shell=/bin/bash, from=none
+2026-01-03T21:08:31.322750+00:00 ubuntu-srv01 useradd[822]: add 'bril' to group 'adm'
+2026-01-03T21:08:31.322761+00:00 ubuntu-srv01 useradd[822]: add 'bril' to group 'cdrom'
+2026-01-03T21:08:31.322771+00:00 ubuntu-srv01 useradd[822]: add 'bril' to group 'sudo'
+2026-01-03T21:08:31.322781+00:00 ubuntu-srv01 useradd[822]: add 'bril' to group 'dip'
+2026-01-03T21:08:31.322790+00:00 ubuntu-srv01 useradd[822]: add 'bril' to group 'plugdev'
+2026-01-03T21:08:31.322800+00:00 ubuntu-srv01 useradd[822]: add 'bril' to group 'lxd'
+2026-01-03T21:08:31.322810+00:00 ubuntu-srv01 useradd[822]: add 'bril' to shadow group 'adm'
+2026-01-03T21:08:31.322821+00:00 ubuntu-srv01 useradd[822]: add 'bril' to shadow group 'cdrom'
+2026-01-03T21:08:31.323357+00:00 ubuntu-srv01 useradd[822]: add 'bril' to shadow group 'sudo'
+2026-01-03T21:08:31.323374+00:00 ubuntu-srv01 useradd[822]: add 'bril' to shadow group 'dip'
+2026-01-03T21:08:31.323386+00:00 ubuntu-srv01 useradd[822]: add 'bril' to shadow group 'plugdev'
+2026-01-03T21:08:31.323396+00:00 ubuntu-srv01 useradd[822]: add 'bril' to shadow group 'lxd'
+2026-01-03T21:08:31.324692+00:00 ubuntu-srv01 passwd[830]: password for 'bril' changed by 'root'
+2026-01-03T21:08:31.342453+00:00 ubuntu-srv01 systemd-logind[862]: New seat seat0.
+2026-01-03T21:08:31.342455+00:00 ubuntu-srv01 systemd-logind[862]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-03T21:08:31.342457+00:00 ubuntu-srv01 systemd-logind[862]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-03T21:08:31.342460+00:00 ubuntu-srv01 systemd-logind[862]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-03T21:08:31.342490+00:00 ubuntu-srv01 polkitd[853]: Loading rules from directory /etc/polkit-1/rules.d
+2026-01-03T21:08:31.342493+00:00 ubuntu-srv01 polkitd[853]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-01-03T21:08:31.342495+00:00 ubuntu-srv01 polkitd[853]: Finished loading, compiling and executing 6 rules
+2026-01-03T21:08:31.342499+00:00 ubuntu-srv01 polkitd[853]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-01-03T21:15:02.104164+00:00 ubuntu-srv01 CRON[1109]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T21:15:02.118561+00:00 ubuntu-srv01 CRON[1109]: pam_unix(cron:session): session closed for user root
+2026-01-03T21:15:48.926057+00:00 ubuntu-srv01 agetty[941]: tty1: invalid character 0x1b in login name
+2026-01-03T21:16:28.825265+00:00 ubuntu-srv01 login[1113]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-01-03T21:16:28.825722+00:00 ubuntu-srv01 login[1113]: PAM adding faulty module: pam_lastlog.so
+2026-01-03T21:16:33.024886+00:00 ubuntu-srv01 login[1113]: pam_unix(login:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-03T21:16:33.077585+00:00 ubuntu-srv01 systemd-logind[862]: New session 2 of user bril.
+2026-01-03T21:16:33.304557+00:00 ubuntu-srv01 (systemd): pam_unix(systemd-user:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-03T21:17:01.130591+00:00 ubuntu-srv01 CRON[1268]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T21:17:01.182241+00:00 ubuntu-srv01 CRON[1268]: pam_unix(cron:session): session closed for user root
+2026-01-03T21:21:41.810547+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+2026-01-03T21:21:41.831957+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-03T21:21:41.891243+00:00 ubuntu-srv01 sshd[1307]: Server listening on 0.0.0.0 port 22.
+2026-01-03T21:21:41.891576+00:00 ubuntu-srv01 sshd[1307]: Server listening on :: port 22.
+2026-01-03T21:21:41.894712+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-03T21:22:39.176761+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/systemctl enable ssh
+2026-01-03T21:22:39.178936+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-03T21:22:40.099002+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-03T21:25:01.196288+00:00 ubuntu-srv01 CRON[1463]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T21:25:01.208631+00:00 ubuntu-srv01 CRON[1463]: pam_unix(cron:session): session closed for user root
+2026-01-03T21:36:09.619388+00:00 ubuntu-srv01 systemd-logind[693]: New seat seat0.
+2026-01-03T21:36:09.619392+00:00 ubuntu-srv01 systemd-logind[693]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-03T21:36:09.619395+00:00 ubuntu-srv01 systemd-logind[693]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-03T21:36:09.619397+00:00 ubuntu-srv01 systemd-logind[693]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-03T21:36:09.619419+00:00 ubuntu-srv01 polkitd[686]: Loading rules from directory /etc/polkit-1/rules.d
+2026-01-03T21:36:09.619423+00:00 ubuntu-srv01 polkitd[686]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-01-03T21:36:09.619432+00:00 ubuntu-srv01 polkitd[686]: Finished loading, compiling and executing 6 rules
+2026-01-03T21:36:09.619439+00:00 ubuntu-srv01 polkitd[686]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-01-03T21:36:10.202178+00:00 ubuntu-srv01 sshd[754]: Server listening on 0.0.0.0 port 22.
+2026-01-03T21:36:10.211808+00:00 ubuntu-srv01 sshd[754]: Server listening on :: port 22.
+2026-01-03T21:36:20.267217+00:00 ubuntu-srv01 login[776]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-01-03T21:36:20.268196+00:00 ubuntu-srv01 login[776]: PAM adding faulty module: pam_lastlog.so
+2026-01-03T21:36:23.736810+00:00 ubuntu-srv01 login[776]: pam_unix(login:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-03T21:36:23.816389+00:00 ubuntu-srv01 systemd-logind[693]: New session 1 of user bril.
+2026-01-03T21:36:23.859699+00:00 ubuntu-srv01 (systemd): pam_unix(systemd-user:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-03T21:44:40.598108+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/sbin/ip link set enp0s8 up
+2026-01-03T21:44:40.599233+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-03T21:44:40.630662+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-03T21:45:01.876516+00:00 ubuntu-srv01 CRON[990]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T21:45:01.886808+00:00 ubuntu-srv01 CRON[990]: pam_unix(cron:session): session closed for user root
+2026-01-03T21:50:58.983714+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/sbin/ip link set enp0s8 up
+2026-01-03T21:50:59.027572+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-03T21:50:59.027995+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-03T21:53:48.465906+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/apt update
+2026-01-03T21:53:48.466217+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-03T21:53:57.606244+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-03T21:54:12.477574+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/apt install isc-dhcp-client -y
+2026-01-03T21:54:12.477722+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-03T21:54:22.527957+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-03T21:54:26.999075+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/sbin/dhclient enp0s8
+2026-01-03T21:54:27.003124+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-03T21:54:27.212825+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-03T21:55:01.092785+00:00 ubuntu-srv01 CRON[1462]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T21:55:01.109823+00:00 ubuntu-srv01 CRON[1462]: pam_unix(cron:session): session closed for user root
+2026-01-03T22:05:01.327729+00:00 ubuntu-srv01 CRON[1510]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T22:05:01.356765+00:00 ubuntu-srv01 CRON[1510]: pam_unix(cron:session): session closed for user root
+2026-01-03T22:35:01.804466+00:00 ubuntu-srv01 CRON[1614]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T22:35:01.840337+00:00 ubuntu-srv01 CRON[1614]: pam_unix(cron:session): session closed for user root
+2026-01-03T22:45:01.149233+00:00 ubuntu-srv01 CRON[1674]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T22:45:01.192657+00:00 ubuntu-srv01 CRON[1674]: pam_unix(cron:session): session closed for user root
+2026-01-03T22:55:01.156288+00:00 ubuntu-srv01 CRON[1716]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T22:55:01.167261+00:00 ubuntu-srv01 CRON[1716]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:05:01.355055+00:00 ubuntu-srv01 CRON[1758]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:05:01.366403+00:00 ubuntu-srv01 CRON[1758]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:15:01.915687+00:00 ubuntu-srv01 CRON[1801]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:15:01.934984+00:00 ubuntu-srv01 CRON[1801]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:17:01.945627+00:00 ubuntu-srv01 CRON[1820]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:17:01.982195+00:00 ubuntu-srv01 CRON[1820]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:25:02.012104+00:00 ubuntu-srv01 CRON[1885]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:25:02.022675+00:00 ubuntu-srv01 CRON[1885]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:35:01.261263+00:00 ubuntu-srv01 CRON[1945]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:35:01.274172+00:00 ubuntu-srv01 CRON[1945]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:46:54.335576+00:00 ubuntu-srv01 CRON[1972]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:46:54.335798+00:00 ubuntu-srv01 CRON[1972]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:55:01.528145+00:00 ubuntu-srv01 CRON[2019]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:55:01.554113+00:00 ubuntu-srv01 CRON[2019]: pam_unix(cron:session): session closed for user root
+2026-01-03T23:59:01.632856+00:00 ubuntu-srv01 CRON[2040]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-03T23:59:01.645107+00:00 ubuntu-srv01 CRON[2040]: pam_unix(cron:session): session closed for user root
+2026-01-04T00:07:39.807896+00:00 ubuntu-srv01 CRON[2123]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T00:07:39.829380+00:00 ubuntu-srv01 CRON[2123]: pam_unix(cron:session): session closed for user root
+2026-01-04T00:15:01.393052+00:00 ubuntu-srv01 CRON[2181]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T00:15:01.420714+00:00 ubuntu-srv01 CRON[2181]: pam_unix(cron:session): session closed for user root
+2026-01-04T00:17:02.773170+00:00 ubuntu-srv01 CRON[2201]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T00:17:02.788027+00:00 ubuntu-srv01 CRON[2201]: pam_unix(cron:session): session closed for user root
+2026-01-04T00:25:01.887049+00:00 ubuntu-srv01 CRON[2225]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T00:25:01.904570+00:00 ubuntu-srv01 CRON[2225]: pam_unix(cron:session): session closed for user root
+2026-01-04T00:35:43.774006+00:00 ubuntu-srv01 CRON[2357]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T00:35:43.775433+00:00 ubuntu-srv01 CRON[2357]: pam_unix(cron:session): session closed for user root
+2026-01-04T00:35:46.088980+00:00 ubuntu-srv01 systemd-logind[2372]: New seat seat0.
+2026-01-04T00:35:46.096073+00:00 ubuntu-srv01 systemd-logind[2372]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-04T00:35:46.096348+00:00 ubuntu-srv01 systemd-logind[2372]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-04T00:35:46.098020+00:00 ubuntu-srv01 systemd-logind[2372]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-04T00:35:46.106757+00:00 ubuntu-srv01 systemd-logind[2372]: New session 1 of user bril.
+2026-01-04T00:42:16.526179+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/sbin/adduser analyst
+2026-01-04T00:42:16.577868+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-04T00:42:16.720781+00:00 ubuntu-srv01 groupadd[2419]: group added to /etc/group: name=analyst, GID=1001
+2026-01-04T00:42:16.739289+00:00 ubuntu-srv01 groupadd[2419]: group added to /etc/gshadow: name=analyst
+2026-01-04T00:42:16.744928+00:00 ubuntu-srv01 groupadd[2419]: new group: name=analyst, GID=1001
+2026-01-04T00:42:16.838877+00:00 ubuntu-srv01 useradd[2426]: new user: name=analyst, UID=1001, GID=1001, home=/home/analyst, shell=/bin/bash, from=/dev/pts/0
+2026-01-04T00:42:29.948725+00:00 ubuntu-srv01 passwd[2439]: pam_unix(passwd:chauthtok): password changed for analyst
+2026-01-04T00:45:01.756355+00:00 ubuntu-srv01 CRON[2442]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T00:45:01.772152+00:00 ubuntu-srv01 CRON[2442]: pam_unix(cron:session): session closed for user root
+2026-01-04T01:05:01.258615+00:00 ubuntu-srv01 CRON[2526]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T01:05:01.268468+00:00 ubuntu-srv01 CRON[2526]: pam_unix(cron:session): session closed for user root
+2026-01-04T01:25:01.888616+00:00 ubuntu-srv01 CRON[2591]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T01:25:01.912560+00:00 ubuntu-srv01 CRON[2591]: pam_unix(cron:session): session closed for user root
+2026-01-04T01:27:17.049358+00:00 ubuntu-srv01 chfn[2441]: changed user 'analyst' information
+2026-01-04T01:27:17.338225+00:00 ubuntu-srv01 gpasswd[2601]: members of group users set by root to analyst
+2026-01-04T01:27:17.346341+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-04T01:32:28.704259+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/sbin/adduser guest
+2026-01-04T01:32:28.749123+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-04T01:32:28.834243+00:00 ubuntu-srv01 groupadd[2637]: group added to /etc/group: name=guest, GID=1002
+2026-01-04T01:32:28.853761+00:00 ubuntu-srv01 groupadd[2637]: group added to /etc/gshadow: name=guest
+2026-01-04T01:32:28.857280+00:00 ubuntu-srv01 groupadd[2637]: new group: name=guest, GID=1002
+2026-01-04T01:32:28.915120+00:00 ubuntu-srv01 useradd[2644]: new user: name=guest, UID=1002, GID=1002, home=/home/guest, shell=/bin/bash, from=/dev/pts/0
+2026-01-04T01:32:40.279939+00:00 ubuntu-srv01 passwd[2657]: pam_unix(passwd:chauthtok): password changed for guest
+2026-01-04T01:32:51.280441+00:00 ubuntu-srv01 chfn[2658]: changed user 'guest' information
+2026-01-04T01:32:59.209153+00:00 ubuntu-srv01 gpasswd[2666]: members of group users set by root to analyst,guest
+2026-01-04T01:32:59.213668+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-04T01:35:01.934107+00:00 ubuntu-srv01 CRON[2692]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T01:35:01.978720+00:00 ubuntu-srv01 CRON[2692]: pam_unix(cron:session): session closed for user root
+2026-01-04T01:45:02.003679+00:00 ubuntu-srv01 CRON[2733]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T01:45:02.032142+00:00 ubuntu-srv01 CRON[2733]: pam_unix(cron:session): session closed for user root
+2026-01-04T01:55:01.047797+00:00 ubuntu-srv01 CRON[2779]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T01:55:01.057261+00:00 ubuntu-srv01 CRON[2779]: pam_unix(cron:session): session closed for user root
+2026-01-04T02:17:14.760550+00:00 ubuntu-srv01 CRON[2799]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T02:17:14.764634+00:00 ubuntu-srv01 CRON[2799]: pam_unix(cron:session): session closed for user root
+2026-01-04T02:25:01.076009+00:00 ubuntu-srv01 CRON[2893]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T02:25:01.094524+00:00 ubuntu-srv01 CRON[2893]: pam_unix(cron:session): session closed for user root
+2026-01-04T02:25:05.275367+00:00 ubuntu-srv01 su[2896]: (to analyst) bril on tty1
+2026-01-04T02:25:05.300800+00:00 ubuntu-srv01 su[2896]: pam_unix(su-l:session): session opened for user analyst(uid=1001) by bril(uid=1000)
+2026-01-04T02:25:14.911454+00:00 ubuntu-srv01 su[2896]: pam_unix(su-l:session): session closed for user analyst
+2026-01-04T02:25:28.442192+00:00 ubuntu-srv01 su[2912]: (to guest) bril on tty1
+2026-01-04T02:25:28.444441+00:00 ubuntu-srv01 su[2912]: pam_unix(su-l:session): session opened for user guest(uid=1002) by bril(uid=1000)
+2026-01-04T02:34:47.397965+00:00 ubuntu-srv01 su[2912]: pam_unix(su-l:session): session closed for user guest
+2026-01-04T02:35:01.119066+00:00 ubuntu-srv01 CRON[2965]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T02:35:01.125567+00:00 ubuntu-srv01 CRON[2965]: pam_unix(cron:session): session closed for user root
+2026-01-04T02:45:01.210100+00:00 ubuntu-srv01 CRON[3026]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T02:45:01.218016+00:00 ubuntu-srv01 CRON[3026]: pam_unix(cron:session): session closed for user root
+2026-01-04T03:12:27.401394+00:00 ubuntu-srv01 CRON[3056]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T03:12:27.465268+00:00 ubuntu-srv01 CRON[3056]: pam_unix(cron:session): session closed for user root
+2026-01-04T03:36:15.240662+00:00 ubuntu-srv01 CRON[3115]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T03:36:15.245890+00:00 ubuntu-srv01 CRON[3115]: pam_unix(cron:session): session closed for user root
+2026-01-04T03:55:01.124367+00:00 ubuntu-srv01 CRON[3243]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T03:55:01.164188+00:00 ubuntu-srv01 CRON[3243]: pam_unix(cron:session): session closed for user root
+2026-01-04T04:05:01.956553+00:00 ubuntu-srv01 CRON[3305]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T04:05:01.975005+00:00 ubuntu-srv01 CRON[3305]: pam_unix(cron:session): session closed for user root
+2026-01-04T04:15:01.750855+00:00 ubuntu-srv01 CRON[3351]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T04:15:01.772020+00:00 ubuntu-srv01 CRON[3351]: pam_unix(cron:session): session closed for user root
+2026-01-04T04:17:01.788206+00:00 ubuntu-srv01 CRON[3371]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T04:17:01.816094+00:00 ubuntu-srv01 CRON[3371]: pam_unix(cron:session): session closed for user root
+2026-01-04T04:25:01.871321+00:00 ubuntu-srv01 CRON[3414]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T04:25:01.906604+00:00 ubuntu-srv01 CRON[3414]: pam_unix(cron:session): session closed for user root
+2026-01-04T04:35:01.939199+00:00 ubuntu-srv01 CRON[3457]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T04:35:01.957883+00:00 ubuntu-srv01 CRON[3457]: pam_unix(cron:session): session closed for user root
+2026-01-04T04:45:01.979665+00:00 ubuntu-srv01 CRON[3508]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T04:45:01.994951+00:00 ubuntu-srv01 CRON[3508]: pam_unix(cron:session): session closed for user root
+2026-01-04T04:55:01.018455+00:00 ubuntu-srv01 CRON[3549]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T04:55:01.029193+00:00 ubuntu-srv01 CRON[3549]: pam_unix(cron:session): session closed for user root
+2026-01-04T05:03:44.147011+00:00 ubuntu-srv01 systemd-logind[3618]: New seat seat0.
+2026-01-04T05:03:44.159297+00:00 ubuntu-srv01 systemd-logind[3618]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-04T05:03:44.159789+00:00 ubuntu-srv01 systemd-logind[3618]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-04T05:03:44.163828+00:00 ubuntu-srv01 systemd-logind[3618]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-04T05:03:44.181087+00:00 ubuntu-srv01 systemd-logind[3618]: New session 1 of user bril.
+2026-01-04T12:35:01.551146+00:00 ubuntu-srv01 CRON[4251]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T12:35:01.566110+00:00 ubuntu-srv01 CRON[4251]: pam_unix(cron:session): session closed for user root
+2026-01-04T12:36:56.889503+00:00 ubuntu-srv01 su[4272]: (to analyst) bril on tty1
+2026-01-04T12:36:56.903711+00:00 ubuntu-srv01 su[4272]: pam_unix(su-l:session): session opened for user analyst(uid=1001) by bril(uid=1000)
+2026-01-04T12:37:22.999290+00:00 ubuntu-srv01 sudo:  analyst : command not allowed ; TTY=tty1 ; PWD=/home/analyst ; USER=root ; COMMAND=list
+2026-01-04T12:45:01.665869+00:00 ubuntu-srv01 CRON[4328]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T12:45:01.672445+00:00 ubuntu-srv01 CRON[4328]: pam_unix(cron:session): session closed for user root
+2026-01-04T13:27:55.405783+00:00 ubuntu-srv01 CRON[4427]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T13:27:55.405848+00:00 ubuntu-srv01 CRON[4427]: pam_unix(cron:session): session closed for user root
+2026-01-04T13:35:02.013856+00:00 ubuntu-srv01 CRON[4472]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T13:35:02.039138+00:00 ubuntu-srv01 CRON[4472]: pam_unix(cron:session): session closed for user root
+2026-01-04T13:45:01.050062+00:00 ubuntu-srv01 CRON[4520]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T13:45:01.068640+00:00 ubuntu-srv01 CRON[4520]: pam_unix(cron:session): session closed for user root
+2026-01-04T13:55:01.082859+00:00 ubuntu-srv01 CRON[4579]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T13:55:01.111730+00:00 ubuntu-srv01 CRON[4579]: pam_unix(cron:session): session closed for user root
+2026-01-04T14:05:01.107767+00:00 ubuntu-srv01 CRON[4628]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T14:05:01.128670+00:00 ubuntu-srv01 CRON[4628]: pam_unix(cron:session): session closed for user root
+2026-01-04T14:15:01.142605+00:00 ubuntu-srv01 CRON[4670]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T14:15:01.162045+00:00 ubuntu-srv01 CRON[4670]: pam_unix(cron:session): session closed for user root
+2026-01-04T14:17:01.156712+00:00 ubuntu-srv01 CRON[4674]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T14:17:01.163258+00:00 ubuntu-srv01 CRON[4674]: pam_unix(cron:session): session closed for user root
+2026-01-04T14:18:01.400931+00:00 ubuntu-srv01 su[4272]: pam_unix(su-l:session): session closed for user analyst
+2026-01-04T14:25:01.181380+00:00 ubuntu-srv01 CRON[4729]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T14:25:01.211382+00:00 ubuntu-srv01 CRON[4729]: pam_unix(cron:session): session closed for user root
+2026-01-04T14:35:01.225072+00:00 ubuntu-srv01 CRON[4771]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T14:35:01.245429+00:00 ubuntu-srv01 CRON[4771]: pam_unix(cron:session): session closed for user root
+2026-01-04T14:45:01.060612+00:00 ubuntu-srv01 CRON[4831]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T14:45:01.080683+00:00 ubuntu-srv01 CRON[4831]: pam_unix(cron:session): session closed for user root
+2026-01-04T14:55:01.109697+00:00 ubuntu-srv01 CRON[4873]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T14:55:01.129268+00:00 ubuntu-srv01 CRON[4873]: pam_unix(cron:session): session closed for user root
+2026-01-04T15:05:01.158109+00:00 ubuntu-srv01 CRON[4923]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T15:05:01.186215+00:00 ubuntu-srv01 CRON[4923]: pam_unix(cron:session): session closed for user root
+2026-01-04T15:15:01.206245+00:00 ubuntu-srv01 CRON[4983]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T15:15:01.225562+00:00 ubuntu-srv01 CRON[4983]: pam_unix(cron:session): session closed for user root
+2026-01-04T15:17:01.248496+00:00 ubuntu-srv01 CRON[4987]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T15:17:01.297797+00:00 ubuntu-srv01 CRON[4987]: pam_unix(cron:session): session closed for user root
+2026-01-04T15:25:01.304845+00:00 ubuntu-srv01 CRON[5036]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T15:25:01.332238+00:00 ubuntu-srv01 CRON[5036]: pam_unix(cron:session): session closed for user root
+2026-01-04T15:35:01.363350+00:00 ubuntu-srv01 CRON[5094]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T15:35:01.372021+00:00 ubuntu-srv01 CRON[5094]: pam_unix(cron:session): session closed for user root
+2026-01-04T15:45:01.403576+00:00 ubuntu-srv01 CRON[5138]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T15:45:01.421472+00:00 ubuntu-srv01 CRON[5138]: pam_unix(cron:session): session closed for user root
+2026-01-04T15:55:01.447759+00:00 ubuntu-srv01 CRON[5180]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T15:55:01.455971+00:00 ubuntu-srv01 CRON[5180]: pam_unix(cron:session): session closed for user root
+2026-01-04T16:05:01.492350+00:00 ubuntu-srv01 CRON[5237]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T16:05:01.500988+00:00 ubuntu-srv01 CRON[5237]: pam_unix(cron:session): session closed for user root
+2026-01-04T16:15:01.384980+00:00 ubuntu-srv01 CRON[5280]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T16:15:01.429539+00:00 ubuntu-srv01 CRON[5280]: pam_unix(cron:session): session closed for user root
+2026-01-04T16:17:01.464266+00:00 ubuntu-srv01 CRON[5300]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T16:17:01.494362+00:00 ubuntu-srv01 CRON[5300]: pam_unix(cron:session): session closed for user root
+2026-01-04T16:25:01.555532+00:00 ubuntu-srv01 CRON[5342]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T16:25:01.597422+00:00 ubuntu-srv01 CRON[5342]: pam_unix(cron:session): session closed for user root
+2026-01-04T16:35:01.636678+00:00 ubuntu-srv01 CRON[5392]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T16:35:01.655107+00:00 ubuntu-srv01 CRON[5392]: pam_unix(cron:session): session closed for user root
+2026-01-04T16:45:01.668364+00:00 ubuntu-srv01 CRON[5433]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T16:45:01.677230+00:00 ubuntu-srv01 CRON[5433]: pam_unix(cron:session): session closed for user root
+2026-01-04T16:55:01.693223+00:00 ubuntu-srv01 CRON[5491]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T16:55:01.702174+00:00 ubuntu-srv01 CRON[5491]: pam_unix(cron:session): session closed for user root
+2026-01-04T17:05:01.733095+00:00 ubuntu-srv01 CRON[5532]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T17:05:01.741288+00:00 ubuntu-srv01 CRON[5532]: pam_unix(cron:session): session closed for user root
+2026-01-04T17:15:01.759066+00:00 ubuntu-srv01 CRON[5607]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T17:15:01.769328+00:00 ubuntu-srv01 CRON[5607]: pam_unix(cron:session): session closed for user root
+2026-01-04T17:17:01.775262+00:00 ubuntu-srv01 CRON[5626]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T17:17:01.786582+00:00 ubuntu-srv01 CRON[5626]: pam_unix(cron:session): session closed for user root
+2026-01-04T17:25:01.810440+00:00 ubuntu-srv01 CRON[5651]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T17:25:01.832365+00:00 ubuntu-srv01 CRON[5651]: pam_unix(cron:session): session closed for user root
+2026-01-04T20:17:01.914855+00:00 ubuntu-srv01 CRON[5809]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T20:17:01.997826+00:00 ubuntu-srv01 CRON[5809]: pam_unix(cron:session): session closed for user root
+2026-01-04T20:25:01.011301+00:00 ubuntu-srv01 CRON[5881]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T20:25:01.025651+00:00 ubuntu-srv01 CRON[5881]: pam_unix(cron:session): session closed for user root
+2026-01-04T20:35:01.033450+00:00 ubuntu-srv01 CRON[5922]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T20:35:01.043242+00:00 ubuntu-srv01 CRON[5922]: pam_unix(cron:session): session closed for user root
+2026-01-04T20:45:01.052550+00:00 ubuntu-srv01 CRON[5981]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T20:45:01.063547+00:00 ubuntu-srv01 CRON[5981]: pam_unix(cron:session): session closed for user root
+2026-01-04T20:55:01.075045+00:00 ubuntu-srv01 CRON[6022]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T20:55:01.086019+00:00 ubuntu-srv01 CRON[6022]: pam_unix(cron:session): session closed for user root
+2026-01-04T20:56:54.984478+00:00 ubuntu-srv01 systemd-logind[693]: New seat seat0.
+2026-01-04T20:56:54.984500+00:00 ubuntu-srv01 systemd-logind[693]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-04T20:56:54.984504+00:00 ubuntu-srv01 systemd-logind[693]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-04T20:56:54.984506+00:00 ubuntu-srv01 systemd-logind[693]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-04T20:56:54.984542+00:00 ubuntu-srv01 polkitd[684]: Loading rules from directory /etc/polkit-1/rules.d
+2026-01-04T20:56:54.984546+00:00 ubuntu-srv01 polkitd[684]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-01-04T20:56:54.984571+00:00 ubuntu-srv01 polkitd[684]: Finished loading, compiling and executing 6 rules
+2026-01-04T20:56:54.984577+00:00 ubuntu-srv01 polkitd[684]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-01-04T20:56:55.717587+00:00 ubuntu-srv01 sshd[766]: Server listening on 0.0.0.0 port 22.
+2026-01-04T20:56:55.717667+00:00 ubuntu-srv01 sshd[766]: Server listening on :: port 22.
+2026-01-04T20:57:33.916923+00:00 ubuntu-srv01 login[797]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-01-04T20:57:33.917042+00:00 ubuntu-srv01 login[797]: PAM adding faulty module: pam_lastlog.so
+2026-01-04T20:57:38.210038+00:00 ubuntu-srv01 login[797]: pam_unix(login:auth): check pass; user unknown
+2026-01-04T20:57:38.210209+00:00 ubuntu-srv01 login[797]: pam_unix(login:auth): authentication failure; logname=LOGIN uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+2026-01-04T20:57:41.790119+00:00 ubuntu-srv01 login[797]: FAILED LOGIN (1) on '/dev/tty1' FOR 'UNKNOWN', Authentication failure
+2026-01-04T20:57:57.244457+00:00 ubuntu-srv01 login[797]: pam_unix(login:session): session opened for user bril(uid=1000) by LOGIN(uid=0)
+2026-01-04T20:57:57.289680+00:00 ubuntu-srv01 systemd-logind[693]: New session 1 of user bril.
+2026-01-04T20:57:57.321679+00:00 ubuntu-srv01 (systemd): pam_unix(systemd-user:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-04T21:05:01.506174+00:00 ubuntu-srv01 CRON[990]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T21:05:01.513764+00:00 ubuntu-srv01 CRON[990]: pam_unix(cron:session): session closed for user root
+2026-01-04T21:16:54.425727+00:00 ubuntu-srv01 CRON[1005]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T21:16:54.431898+00:00 ubuntu-srv01 CRON[1005]: pam_unix(cron:session): session closed for user root
+2026-01-04T21:16:54.440034+00:00 ubuntu-srv01 systemd-logind[1023]: New seat seat0.
+2026-01-04T21:16:54.440190+00:00 ubuntu-srv01 systemd-logind[1023]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-04T21:16:54.440254+00:00 ubuntu-srv01 systemd-logind[1023]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-04T21:16:54.440290+00:00 ubuntu-srv01 systemd-logind[1023]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-04T21:16:54.440329+00:00 ubuntu-srv01 systemd-logind[1023]: New session 1 of user bril.
+2026-01-04T21:17:01.956734+00:00 ubuntu-srv01 CRON[1040]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T21:17:01.975245+00:00 ubuntu-srv01 CRON[1040]: pam_unix(cron:session): session closed for user root
+2026-01-04T21:25:01.039296+00:00 ubuntu-srv01 CRON[1064]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T21:25:01.059383+00:00 ubuntu-srv01 CRON[1064]: pam_unix(cron:session): session closed for user root
+2026-01-04T21:35:01.135929+00:00 ubuntu-srv01 CRON[1075]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T21:35:01.144350+00:00 ubuntu-srv01 CRON[1075]: pam_unix(cron:session): session closed for user root
+2026-01-04T21:45:01.162520+00:00 ubuntu-srv01 CRON[1111]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T21:45:01.183154+00:00 ubuntu-srv01 CRON[1111]: pam_unix(cron:session): session closed for user root
+2026-01-04T21:55:01.204816+00:00 ubuntu-srv01 CRON[1124]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T21:55:01.227095+00:00 ubuntu-srv01 CRON[1124]: pam_unix(cron:session): session closed for user root
+2026-01-04T22:05:01.249687+00:00 ubuntu-srv01 CRON[1135]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T22:05:01.273237+00:00 ubuntu-srv01 CRON[1135]: pam_unix(cron:session): session closed for user root
+2026-01-04T22:15:01.295754+00:00 ubuntu-srv01 CRON[1146]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T22:15:01.311322+00:00 ubuntu-srv01 CRON[1146]: pam_unix(cron:session): session closed for user root
+2026-01-04T22:17:01.330354+00:00 ubuntu-srv01 CRON[1153]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T22:17:01.359577+00:00 ubuntu-srv01 CRON[1153]: pam_unix(cron:session): session closed for user root
+2026-01-04T22:25:01.381059+00:00 ubuntu-srv01 CRON[1166]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T22:25:01.395451+00:00 ubuntu-srv01 CRON[1166]: pam_unix(cron:session): session closed for user root
+2026-01-04T22:35:01.410777+00:00 ubuntu-srv01 CRON[1175]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T22:35:01.419677+00:00 ubuntu-srv01 CRON[1175]: pam_unix(cron:session): session closed for user root
+2026-01-04T23:05:01.546075+00:00 ubuntu-srv01 CRON[1186]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T23:05:01.558492+00:00 ubuntu-srv01 CRON[1186]: pam_unix(cron:session): session closed for user root
+2026-01-04T23:17:01.026139+00:00 ubuntu-srv01 CRON[1197]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T23:17:01.051784+00:00 ubuntu-srv01 CRON[1197]: pam_unix(cron:session): session closed for user root
+2026-01-04T23:25:01.094743+00:00 ubuntu-srv01 CRON[1204]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T23:25:01.127038+00:00 ubuntu-srv01 CRON[1204]: pam_unix(cron:session): session closed for user root
+2026-01-04T23:35:01.166358+00:00 ubuntu-srv01 CRON[1213]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T23:35:01.183769+00:00 ubuntu-srv01 CRON[1213]: pam_unix(cron:session): session closed for user root
+2026-01-04T23:45:01.228577+00:00 ubuntu-srv01 CRON[1223]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T23:45:01.256343+00:00 ubuntu-srv01 CRON[1223]: pam_unix(cron:session): session closed for user root
+2026-01-04T23:55:01.334394+00:00 ubuntu-srv01 CRON[1241]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T23:55:01.359388+00:00 ubuntu-srv01 CRON[1241]: pam_unix(cron:session): session closed for user root
+2026-01-04T23:59:01.390171+00:00 ubuntu-srv01 CRON[1246]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-04T23:59:01.412329+00:00 ubuntu-srv01 CRON[1246]: pam_unix(cron:session): session closed for user root
+2026-01-05T00:05:01.431782+00:00 ubuntu-srv01 CRON[1265]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T00:05:01.448802+00:00 ubuntu-srv01 CRON[1265]: pam_unix(cron:session): session closed for user root
+2026-01-05T00:15:01.200786+00:00 ubuntu-srv01 CRON[1289]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T00:15:01.218316+00:00 ubuntu-srv01 CRON[1289]: pam_unix(cron:session): session closed for user root
+2026-01-05T00:17:01.233680+00:00 ubuntu-srv01 CRON[1294]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T00:17:01.257343+00:00 ubuntu-srv01 CRON[1294]: pam_unix(cron:session): session closed for user root
+2026-01-05T00:25:01.274561+00:00 ubuntu-srv01 CRON[1309]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T00:25:01.299912+00:00 ubuntu-srv01 CRON[1309]: pam_unix(cron:session): session closed for user root
+2026-01-05T00:35:01.328262+00:00 ubuntu-srv01 CRON[1318]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T00:35:01.362442+00:00 ubuntu-srv01 CRON[1318]: pam_unix(cron:session): session closed for user root
+2026-01-05T00:45:01.416792+00:00 ubuntu-srv01 CRON[1333]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T00:45:01.459489+00:00 ubuntu-srv01 CRON[1333]: pam_unix(cron:session): session closed for user root
+2026-01-05T00:55:01.487856+00:00 ubuntu-srv01 CRON[1342]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T00:55:01.536386+00:00 ubuntu-srv01 CRON[1342]: pam_unix(cron:session): session closed for user root
+2026-01-05T01:05:01.705553+00:00 ubuntu-srv01 CRON[1350]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T01:05:01.747834+00:00 ubuntu-srv01 CRON[1350]: pam_unix(cron:session): session closed for user root
+2026-01-05T01:15:01.807100+00:00 ubuntu-srv01 CRON[1360]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T01:15:01.839908+00:00 ubuntu-srv01 CRON[1360]: pam_unix(cron:session): session closed for user root
+2026-01-05T01:17:01.856855+00:00 ubuntu-srv01 CRON[1366]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T01:17:01.897205+00:00 ubuntu-srv01 CRON[1366]: pam_unix(cron:session): session closed for user root
+2026-01-05T01:25:01.924105+00:00 ubuntu-srv01 CRON[1375]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T01:25:01.940192+00:00 ubuntu-srv01 CRON[1375]: pam_unix(cron:session): session closed for user root
+2026-01-05T01:35:01.065112+00:00 ubuntu-srv01 CRON[1385]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T01:35:01.092576+00:00 ubuntu-srv01 CRON[1385]: pam_unix(cron:session): session closed for user root
+2026-01-05T01:45:01.125645+00:00 ubuntu-srv01 CRON[1404]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T01:45:01.151999+00:00 ubuntu-srv01 CRON[1404]: pam_unix(cron:session): session closed for user root
+2026-01-05T01:55:01.172265+00:00 ubuntu-srv01 CRON[1413]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T01:55:01.201522+00:00 ubuntu-srv01 CRON[1413]: pam_unix(cron:session): session closed for user root
+2026-01-05T02:05:01.228838+00:00 ubuntu-srv01 CRON[1422]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T02:05:01.262816+00:00 ubuntu-srv01 CRON[1422]: pam_unix(cron:session): session closed for user root
+2026-01-05T02:15:01.310794+00:00 ubuntu-srv01 CRON[1431]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T02:15:01.350597+00:00 ubuntu-srv01 CRON[1431]: pam_unix(cron:session): session closed for user root
+2026-01-05T02:17:01.370271+00:00 ubuntu-srv01 CRON[1436]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T02:17:01.428362+00:00 ubuntu-srv01 CRON[1436]: pam_unix(cron:session): session closed for user root
+2026-01-05T06:35:01.726898+00:00 ubuntu-srv01 CRON[1527]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T06:35:01.747037+00:00 ubuntu-srv01 CRON[1527]: pam_unix(cron:session): session closed for user root
+2026-01-05T06:45:01.792071+00:00 ubuntu-srv01 CRON[1541]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T06:45:01.854819+00:00 ubuntu-srv01 CRON[1541]: pam_unix(cron:session): session closed for user root
+2026-01-05T06:55:01.597581+00:00 ubuntu-srv01 CRON[1553]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T06:55:01.634633+00:00 ubuntu-srv01 CRON[1553]: pam_unix(cron:session): session closed for user root
+2026-01-05T07:05:01.685319+00:00 ubuntu-srv01 CRON[1567]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T07:05:01.744189+00:00 ubuntu-srv01 CRON[1567]: pam_unix(cron:session): session closed for user root
+2026-01-05T07:15:01.861481+00:00 ubuntu-srv01 CRON[1582]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T07:15:01.916102+00:00 ubuntu-srv01 CRON[1582]: pam_unix(cron:session): session closed for user root
+2026-01-05T13:15:01.950786+00:00 ubuntu-srv01 CRON[1655]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T13:15:02.005326+00:00 ubuntu-srv01 CRON[1655]: pam_unix(cron:session): session closed for user root
+2026-01-05T13:17:01.998352+00:00 ubuntu-srv01 CRON[1658]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T13:17:02.013585+00:00 ubuntu-srv01 CRON[1658]: pam_unix(cron:session): session closed for user root
+2026-01-05T13:25:01.049791+00:00 ubuntu-srv01 CRON[1670]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T13:25:01.072548+00:00 ubuntu-srv01 CRON[1670]: pam_unix(cron:session): session closed for user root
+2026-01-05T13:35:01.083816+00:00 ubuntu-srv01 CRON[1697]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T13:35:01.092764+00:00 ubuntu-srv01 CRON[1697]: pam_unix(cron:session): session closed for user root
+2026-01-05T13:45:01.150638+00:00 ubuntu-srv01 CRON[1707]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T13:45:01.165672+00:00 ubuntu-srv01 CRON[1707]: pam_unix(cron:session): session closed for user root
+2026-01-05T13:55:01.268414+00:00 ubuntu-srv01 CRON[1718]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T13:55:01.294651+00:00 ubuntu-srv01 CRON[1718]: pam_unix(cron:session): session closed for user root
+2026-01-05T14:15:53.446192+00:00 ubuntu-srv01 CRON[1728]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T14:15:53.516241+00:00 ubuntu-srv01 CRON[1728]: pam_unix(cron:session): session closed for user root
+2026-01-05T14:17:01.537972+00:00 ubuntu-srv01 CRON[1737]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T14:17:01.560205+00:00 ubuntu-srv01 CRON[1737]: pam_unix(cron:session): session closed for user root
+2026-01-05T14:24:24.554977+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/apt install tree
+2026-01-05T14:24:24.593169+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-05T14:24:34.154436+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-05T14:25:01.572689+00:00 ubuntu-srv01 CRON[1876]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T14:25:01.587970+00:00 ubuntu-srv01 CRON[1876]: pam_unix(cron:session): session closed for user root
+2026-01-05T14:35:01.655011+00:00 ubuntu-srv01 CRON[1898]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T14:35:01.697257+00:00 ubuntu-srv01 CRON[1898]: pam_unix(cron:session): session closed for user root
+2026-01-05T14:45:01.721947+00:00 ubuntu-srv01 CRON[1926]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T14:45:01.743710+00:00 ubuntu-srv01 CRON[1926]: pam_unix(cron:session): session closed for user root
+2026-01-05T14:55:01.758781+00:00 ubuntu-srv01 CRON[1953]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T14:55:01.772273+00:00 ubuntu-srv01 CRON[1953]: pam_unix(cron:session): session closed for user root
+2026-01-05T15:08:56.910897+00:00 ubuntu-srv01 su[1968]: (to guest) bril on tty1
+2026-01-05T15:08:56.923767+00:00 ubuntu-srv01 su[1968]: pam_unix(su-l:session): session opened for user guest(uid=1002) by bril(uid=1000)
+2026-01-05T17:28:20.157290+00:00 ubuntu-srv01 su[2001]: (to bril) guest on tty1
+2026-01-05T17:28:20.191078+00:00 ubuntu-srv01 su[2001]: pam_unix(su-l:session): session opened for user bril(uid=1000) by bril(uid=1002)
+2026-01-05T17:35:01.327198+00:00 ubuntu-srv01 CRON[2042]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T17:35:01.336902+00:00 ubuntu-srv01 CRON[2042]: pam_unix(cron:session): session closed for user root
+2026-01-05T17:45:01.348717+00:00 ubuntu-srv01 CRON[2054]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T17:45:01.370744+00:00 ubuntu-srv01 CRON[2054]: pam_unix(cron:session): session closed for user root
+2026-01-05T17:55:01.618358+00:00 ubuntu-srv01 CRON[2064]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T17:55:01.638916+00:00 ubuntu-srv01 CRON[2064]: pam_unix(cron:session): session closed for user root
+2026-01-05T18:05:01.686562+00:00 ubuntu-srv01 CRON[2074]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T18:05:01.740634+00:00 ubuntu-srv01 CRON[2074]: pam_unix(cron:session): session closed for user root
+2026-01-05T18:15:20.016617+00:00 ubuntu-srv01 CRON[2083]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T18:15:20.018313+00:00 ubuntu-srv01 CRON[2083]: pam_unix(cron:session): session closed for user root
+2026-01-05T18:17:01.256570+00:00 ubuntu-srv01 CRON[2108]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T18:17:01.264189+00:00 ubuntu-srv01 CRON[2108]: pam_unix(cron:session): session closed for user root
+2026-01-05T18:25:01.284659+00:00 ubuntu-srv01 CRON[2117]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T18:25:01.330664+00:00 ubuntu-srv01 CRON[2117]: pam_unix(cron:session): session closed for user root
+2026-01-05T18:35:01.339390+00:00 ubuntu-srv01 CRON[2148]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T18:35:01.382781+00:00 ubuntu-srv01 CRON[2148]: pam_unix(cron:session): session closed for user root
+2026-01-05T18:45:01.710924+00:00 ubuntu-srv01 CRON[2193]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T18:45:01.724520+00:00 ubuntu-srv01 CRON[2193]: pam_unix(cron:session): session closed for user root
+2026-01-05T18:55:01.755509+00:00 ubuntu-srv01 CRON[2227]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T18:55:01.761315+00:00 ubuntu-srv01 CRON[2227]: pam_unix(cron:session): session closed for user root
+2026-01-05T19:00:21.057282+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ls root
+2026-01-05T19:00:21.088484+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-05T19:00:21.088659+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-05T19:00:35.501467+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ls root
+2026-01-05T19:00:35.502577+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-05T19:00:35.508804+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-05T19:00:43.892941+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/ls root
+2026-01-05T19:00:43.895170+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-05T19:00:43.900232+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-05T19:05:01.905584+00:00 ubuntu-srv01 CRON[2278]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T19:05:01.912878+00:00 ubuntu-srv01 CRON[2278]: pam_unix(cron:session): session closed for user root
+2026-01-05T19:15:01.021082+00:00 ubuntu-srv01 CRON[2288]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T19:15:01.027615+00:00 ubuntu-srv01 CRON[2288]: pam_unix(cron:session): session closed for user root
+2026-01-05T19:17:01.034301+00:00 ubuntu-srv01 CRON[2293]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T19:17:01.055216+00:00 ubuntu-srv01 CRON[2293]: pam_unix(cron:session): session closed for user root
+2026-01-05T19:25:01.093749+00:00 ubuntu-srv01 CRON[2302]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T19:25:01.123664+00:00 ubuntu-srv01 CRON[2302]: pam_unix(cron:session): session closed for user root
+2026-01-05T19:35:01.125730+00:00 ubuntu-srv01 CRON[2311]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T19:35:01.135054+00:00 ubuntu-srv01 CRON[2311]: pam_unix(cron:session): session closed for user root
+2026-01-05T19:42:01.184928+00:00 ubuntu-srv01 su[2339]: (to analyst) bril on tty1
+2026-01-05T19:42:01.204300+00:00 ubuntu-srv01 su[2339]: pam_unix(su:session): session opened for user analyst(uid=1001) by bril(uid=1000)
+2026-01-05T19:45:01.220466+00:00 ubuntu-srv01 CRON[2353]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T19:45:01.251461+00:00 ubuntu-srv01 CRON[2353]: pam_unix(cron:session): session closed for user root
+2026-01-05T19:46:01.520680+00:00 ubuntu-srv01 su[2358]: (to bril) analyst on tty1
+2026-01-05T19:46:01.548646+00:00 ubuntu-srv01 su[2358]: pam_unix(su:session): session opened for user bril(uid=1000) by bril(uid=1001)
+2026-01-05T19:46:11.065855+00:00 ubuntu-srv01 su[2366]: (to bril) bril on tty1
+2026-01-05T19:46:11.087981+00:00 ubuntu-srv01 su[2366]: pam_unix(su:session): session opened for user bril(uid=1000) by bril(uid=1000)
+2026-01-05T20:05:01.361483+00:00 ubuntu-srv01 CRON[2399]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T20:05:01.369712+00:00 ubuntu-srv01 CRON[2399]: pam_unix(cron:session): session closed for user root
+2026-01-05T20:15:01.384117+00:00 ubuntu-srv01 CRON[2408]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T20:15:01.391374+00:00 ubuntu-srv01 CRON[2408]: pam_unix(cron:session): session closed for user root
+2026-01-05T20:17:01.397884+00:00 ubuntu-srv01 CRON[2412]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T20:17:01.418127+00:00 ubuntu-srv01 CRON[2412]: pam_unix(cron:session): session closed for user root
+2026-01-05T20:25:01.447176+00:00 ubuntu-srv01 CRON[2421]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T20:25:01.481847+00:00 ubuntu-srv01 CRON[2421]: pam_unix(cron:session): session closed for user root
+2026-01-05T20:55:01.577216+00:00 ubuntu-srv01 CRON[2442]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T20:55:01.617251+00:00 ubuntu-srv01 CRON[2442]: pam_unix(cron:session): session closed for user root
+2026-01-05T21:05:01.658442+00:00 ubuntu-srv01 CRON[2453]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T21:05:01.681426+00:00 ubuntu-srv01 CRON[2453]: pam_unix(cron:session): session closed for user root
+2026-01-05T21:15:01.708058+00:00 ubuntu-srv01 CRON[2463]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T21:15:01.735006+00:00 ubuntu-srv01 CRON[2463]: pam_unix(cron:session): session closed for user root
+2026-01-05T21:17:01.752135+00:00 ubuntu-srv01 CRON[2475]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T21:17:01.774459+00:00 ubuntu-srv01 CRON[2475]: pam_unix(cron:session): session closed for user root
+2026-01-05T21:25:01.814356+00:00 ubuntu-srv01 CRON[2485]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T21:25:01.843323+00:00 ubuntu-srv01 CRON[2485]: pam_unix(cron:session): session closed for user root
+2026-01-05T21:35:01.992942+00:00 ubuntu-srv01 CRON[2494]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T21:35:02.026390+00:00 ubuntu-srv01 CRON[2494]: pam_unix(cron:session): session closed for user root
+2026-01-05T21:45:01.075568+00:00 ubuntu-srv01 CRON[2505]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T21:45:01.115489+00:00 ubuntu-srv01 CRON[2505]: pam_unix(cron:session): session closed for user root
+2026-01-05T21:55:01.200933+00:00 ubuntu-srv01 CRON[2515]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T21:55:01.232939+00:00 ubuntu-srv01 CRON[2515]: pam_unix(cron:session): session closed for user root
+2026-01-05T22:05:01.273698+00:00 ubuntu-srv01 CRON[2524]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T22:05:01.295150+00:00 ubuntu-srv01 CRON[2524]: pam_unix(cron:session): session closed for user root
+2026-01-05T22:15:01.356503+00:00 ubuntu-srv01 CRON[2542]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T22:15:01.378418+00:00 ubuntu-srv01 CRON[2542]: pam_unix(cron:session): session closed for user root
+2026-01-05T22:17:01.422064+00:00 ubuntu-srv01 CRON[2546]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T22:17:01.449147+00:00 ubuntu-srv01 CRON[2546]: pam_unix(cron:session): session closed for user root
+2026-01-05T22:25:01.540756+00:00 ubuntu-srv01 CRON[2554]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T22:25:01.555135+00:00 ubuntu-srv01 CRON[2554]: pam_unix(cron:session): session closed for user root
+2026-01-05T22:45:01.562973+00:00 ubuntu-srv01 CRON[2565]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T22:45:01.593090+00:00 ubuntu-srv01 CRON[2565]: pam_unix(cron:session): session closed for user root
+2026-01-05T22:55:01.634106+00:00 ubuntu-srv01 CRON[2576]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T22:55:01.668632+00:00 ubuntu-srv01 CRON[2576]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:05:01.736263+00:00 ubuntu-srv01 CRON[2586]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:05:01.756907+00:00 ubuntu-srv01 CRON[2586]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:15:01.805990+00:00 ubuntu-srv01 CRON[2596]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:15:01.823666+00:00 ubuntu-srv01 CRON[2596]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:17:01.838046+00:00 ubuntu-srv01 CRON[2600]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:17:01.868159+00:00 ubuntu-srv01 CRON[2600]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:25:01.919719+00:00 ubuntu-srv01 CRON[2609]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:25:01.946562+00:00 ubuntu-srv01 CRON[2609]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:35:02.016188+00:00 ubuntu-srv01 CRON[2618]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:35:02.055305+00:00 ubuntu-srv01 CRON[2618]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:45:01.078740+00:00 ubuntu-srv01 CRON[2627]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:45:01.106008+00:00 ubuntu-srv01 CRON[2627]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:55:01.161047+00:00 ubuntu-srv01 CRON[2643]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:55:01.176414+00:00 ubuntu-srv01 CRON[2643]: pam_unix(cron:session): session closed for user root
+2026-01-05T23:59:01.190580+00:00 ubuntu-srv01 CRON[2648]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-05T23:59:01.222042+00:00 ubuntu-srv01 CRON[2648]: pam_unix(cron:session): session closed for user root
+2026-01-06T00:05:01.567575+00:00 ubuntu-srv01 CRON[2716]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T00:05:01.578322+00:00 ubuntu-srv01 CRON[2716]: pam_unix(cron:session): session closed for user root
+2026-01-06T00:15:01.601605+00:00 ubuntu-srv01 CRON[2747]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T00:15:01.629337+00:00 ubuntu-srv01 CRON[2747]: pam_unix(cron:session): session closed for user root
+2026-01-06T00:17:01.640605+00:00 ubuntu-srv01 CRON[2751]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T00:17:01.657017+00:00 ubuntu-srv01 CRON[2751]: pam_unix(cron:session): session closed for user root
+2026-01-06T02:05:01.480053+00:00 ubuntu-srv01 CRON[2788]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T02:05:01.511131+00:00 ubuntu-srv01 CRON[2788]: pam_unix(cron:session): session closed for user root
+2026-01-06T02:25:01.644761+00:00 ubuntu-srv01 CRON[2801]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T02:25:01.677718+00:00 ubuntu-srv01 CRON[2801]: pam_unix(cron:session): session closed for user root
+2026-01-06T02:35:01.709621+00:00 ubuntu-srv01 CRON[2812]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T02:35:01.733722+00:00 ubuntu-srv01 CRON[2812]: pam_unix(cron:session): session closed for user root
+2026-01-06T02:45:01.765427+00:00 ubuntu-srv01 CRON[2823]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T02:45:01.798775+00:00 ubuntu-srv01 CRON[2823]: pam_unix(cron:session): session closed for user root
+2026-01-06T03:26:09.645562+00:00 ubuntu-srv01 CRON[2828]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T03:26:09.655754+00:00 ubuntu-srv01 CRON[2828]: pam_unix(cron:session): session closed for user root
+2026-01-06T03:45:01.832215+00:00 ubuntu-srv01 CRON[2869]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T03:45:01.869315+00:00 ubuntu-srv01 CRON[2869]: pam_unix(cron:session): session closed for user root
+2026-01-06T03:55:01.945273+00:00 ubuntu-srv01 CRON[2881]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-06T03:55:01.988207+00:00 ubuntu-srv01 CRON[2881]: pam_unix(cron:session): session closed for user root
+2026-01-08T12:53:12.671493+00:00 ubuntu-srv01 polkitd[3996]: Loading rules from directory /etc/polkit-1/rules.d
+2026-01-08T12:53:12.673386+00:00 ubuntu-srv01 polkitd[3996]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-01-08T12:53:12.678640+00:00 ubuntu-srv01 polkitd[3996]: Finished loading, compiling and executing 6 rules
+2026-01-08T12:53:12.684412+00:00 ubuntu-srv01 polkitd[3996]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-01-08T12:55:01.221527+00:00 ubuntu-srv01 CRON[4238]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T12:55:01.235117+00:00 ubuntu-srv01 CRON[4238]: pam_unix(cron:session): session closed for user root
+2026-01-08T17:17:01.550947+00:00 ubuntu-srv01 CRON[4260]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T17:17:01.561557+00:00 ubuntu-srv01 CRON[4260]: pam_unix(cron:session): session closed for user root
+2026-01-08T17:25:01.575450+00:00 ubuntu-srv01 CRON[4275]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T17:25:01.587428+00:00 ubuntu-srv01 CRON[4275]: pam_unix(cron:session): session closed for user root
+2026-01-08T17:28:31.039953+00:00 ubuntu-srv01 systemd-logind[699]: New seat seat0.
+2026-01-08T17:28:31.039977+00:00 ubuntu-srv01 systemd-logind[699]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-08T17:28:31.039981+00:00 ubuntu-srv01 systemd-logind[699]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-08T17:28:31.039984+00:00 ubuntu-srv01 systemd-logind[699]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-08T17:28:31.040019+00:00 ubuntu-srv01 polkitd[692]: Loading rules from directory /etc/polkit-1/rules.d
+2026-01-08T17:28:31.040021+00:00 ubuntu-srv01 polkitd[692]: Loading rules from directory /usr/share/polkit-1/rules.d
+2026-01-08T17:28:30.975020+00:00 ubuntu-srv01 polkitd[692]: Finished loading, compiling and executing 6 rules
+2026-01-08T17:28:30.986586+00:00 ubuntu-srv01 polkitd[692]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+2026-01-08T17:28:31.761948+00:00 ubuntu-srv01 sshd[802]: Server listening on 0.0.0.0 port 22.
+2026-01-08T17:28:31.765004+00:00 ubuntu-srv01 sshd[802]: Server listening on :: port 22.
+2026-01-08T17:28:36.936554+00:00 ubuntu-srv01 login[815]: PAM unable to dlopen(pam_lastlog.so): /usr/lib/security/pam_lastlog.so: cannot open shared object file: No such file or directory
+2026-01-08T17:28:36.936682+00:00 ubuntu-srv01 login[815]: PAM adding faulty module: pam_lastlog.so
+2026-01-08T17:28:40.096769+00:00 ubuntu-srv01 login[815]: pam_unix(login:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-08T17:28:40.190594+00:00 ubuntu-srv01 systemd-logind[699]: New session 1 of user bril.
+2026-01-08T17:28:40.288802+00:00 ubuntu-srv01 (systemd): pam_unix(systemd-user:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-08T17:29:32.510436+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/install tree
+2026-01-08T17:29:32.510753+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:29:32.520486+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:32:48.743703+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/sbin/deluser --remove-home analyst
+2026-01-08T17:32:48.744596+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:32:49.043006+00:00 ubuntu-srv01 userdel[1043]: delete user 'analyst'
+2026-01-08T17:32:49.043324+00:00 ubuntu-srv01 userdel[1043]: delete 'analyst' from group 'users'
+2026-01-08T17:32:49.044351+00:00 ubuntu-srv01 userdel[1043]: removed group 'analyst' owned by 'analyst'
+2026-01-08T17:32:49.044397+00:00 ubuntu-srv01 userdel[1043]: removed shadow group 'analyst' owned by 'analyst'
+2026-01-08T17:32:49.044416+00:00 ubuntu-srv01 userdel[1043]: delete 'analyst' from shadow group 'users'
+2026-01-08T17:32:49.110681+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:33:42.023389+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/sbin/deluser --remove-home guest
+2026-01-08T17:33:42.043399+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:33:42.168208+00:00 ubuntu-srv01 userdel[1066]: delete user 'guest'
+2026-01-08T17:33:42.168341+00:00 ubuntu-srv01 userdel[1066]: delete 'guest' from group 'users'
+2026-01-08T17:33:42.170443+00:00 ubuntu-srv01 userdel[1066]: removed group 'guest' owned by 'guest'
+2026-01-08T17:33:42.170565+00:00 ubuntu-srv01 userdel[1066]: removed shadow group 'guest' owned by 'guest'
+2026-01-08T17:33:42.170601+00:00 ubuntu-srv01 userdel[1066]: delete 'guest' from shadow group 'users'
+2026-01-08T17:33:42.245358+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:35:01.413868+00:00 ubuntu-srv01 CRON[1085]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T17:35:01.420704+00:00 ubuntu-srv01 CRON[1085]: pam_unix(cron:session): session closed for user root
+2026-01-08T17:41:48.628492+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/sbin/adduser sudo systemctl status ssh
+2026-01-08T17:41:48.647442+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:41:48.695516+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:42:12.163542+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+2026-01-08T17:42:12.163936+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:42:12.196399+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:42:56.555368+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/sbin/adduser user1
+2026-01-08T17:42:56.556125+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:42:56.685789+00:00 ubuntu-srv01 groupadd[1113]: group added to /etc/group: name=user1, GID=1001
+2026-01-08T17:42:56.697502+00:00 ubuntu-srv01 groupadd[1113]: group added to /etc/gshadow: name=user1
+2026-01-08T17:42:56.700888+00:00 ubuntu-srv01 groupadd[1113]: new group: name=user1, GID=1001
+2026-01-08T17:42:56.757654+00:00 ubuntu-srv01 useradd[1120]: new user: name=user1, UID=1001, GID=1001, home=/home/user1, shell=/bin/bash, from=/dev/pts/0
+2026-01-08T17:43:07.839196+00:00 ubuntu-srv01 passwd[1133]: pam_unix(passwd:chauthtok): password changed for user1
+2026-01-08T17:43:21.574533+00:00 ubuntu-srv01 chfn[1135]: changed user 'user1' information
+2026-01-08T17:43:25.571906+00:00 ubuntu-srv01 gpasswd[1146]: members of group users set by root to user1
+2026-01-08T17:43:25.575959+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:43:40.762232+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/sbin/adduser user2
+2026-01-08T17:43:40.763880+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:43:40.860027+00:00 ubuntu-srv01 groupadd[1158]: group added to /etc/group: name=user2, GID=1002
+2026-01-08T17:43:40.870147+00:00 ubuntu-srv01 groupadd[1158]: group added to /etc/gshadow: name=user2
+2026-01-08T17:43:40.872312+00:00 ubuntu-srv01 groupadd[1158]: new group: name=user2, GID=1002
+2026-01-08T17:43:40.924864+00:00 ubuntu-srv01 useradd[1165]: new user: name=user2, UID=1002, GID=1002, home=/home/user2, shell=/bin/bash, from=/dev/pts/0
+2026-01-08T17:43:46.448751+00:00 ubuntu-srv01 passwd[1178]: pam_unix(passwd:chauthtok): password changed for user2
+2026-01-08T17:43:59.745917+00:00 ubuntu-srv01 chfn[1179]: changed user 'user2' information
+2026-01-08T17:44:00.889380+00:00 ubuntu-srv01 gpasswd[1187]: members of group users set by root to user1,user2
+2026-01-08T17:44:00.892614+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:44:33.660983+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/sbin/adduser user3
+2026-01-08T17:44:33.661788+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:44:33.786758+00:00 ubuntu-srv01 groupadd[1199]: group added to /etc/group: name=user3, GID=1003
+2026-01-08T17:44:33.798559+00:00 ubuntu-srv01 groupadd[1199]: group added to /etc/gshadow: name=user3
+2026-01-08T17:44:33.800752+00:00 ubuntu-srv01 groupadd[1199]: new group: name=user3, GID=1003
+2026-01-08T17:44:33.862651+00:00 ubuntu-srv01 useradd[1206]: new user: name=user3, UID=1003, GID=1003, home=/home/user3, shell=/bin/bash, from=/dev/pts/0
+2026-01-08T17:44:38.784701+00:00 ubuntu-srv01 passwd[1219]: pam_unix(passwd:chauthtok): password changed for user3
+2026-01-08T17:44:44.523770+00:00 ubuntu-srv01 chfn[1220]: changed user 'user3' information
+2026-01-08T17:44:46.020368+00:00 ubuntu-srv01 gpasswd[1228]: members of group users set by root to user1,user2,user3
+2026-01-08T17:44:46.024427+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:44:59.582635+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/sbin/adduser user4
+2026-01-08T17:44:59.583260+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:44:59.684896+00:00 ubuntu-srv01 groupadd[1240]: group added to /etc/group: name=user4, GID=1004
+2026-01-08T17:44:59.693510+00:00 ubuntu-srv01 groupadd[1240]: group added to /etc/gshadow: name=user4
+2026-01-08T17:44:59.695303+00:00 ubuntu-srv01 groupadd[1240]: new group: name=user4, GID=1004
+2026-01-08T17:44:59.746578+00:00 ubuntu-srv01 useradd[1247]: new user: name=user4, UID=1004, GID=1004, home=/home/user4, shell=/bin/bash, from=/dev/pts/0
+2026-01-08T17:45:01.427374+00:00 ubuntu-srv01 CRON[1261]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T17:45:01.432705+00:00 ubuntu-srv01 CRON[1261]: pam_unix(cron:session): session closed for user root
+2026-01-08T17:45:04.398799+00:00 ubuntu-srv01 passwd[1260]: pam_unix(passwd:chauthtok): password changed for user4
+2026-01-08T17:45:38.597085+00:00 ubuntu-srv01 chfn[1264]: changed user 'user4' information
+2026-01-08T17:45:40.305599+00:00 ubuntu-srv01 gpasswd[1274]: members of group users set by root to user1,user2,user3,user4
+2026-01-08T17:45:40.307915+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:45:55.558683+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/sbin/adduser user4
+2026-01-08T17:45:55.558915+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:45:55.601454+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:46:09.862824+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/sbin/adduser user5
+2026-01-08T17:46:09.863186+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T17:46:09.961933+00:00 ubuntu-srv01 groupadd[1290]: group added to /etc/group: name=user5, GID=1005
+2026-01-08T17:46:09.973490+00:00 ubuntu-srv01 groupadd[1290]: group added to /etc/gshadow: name=user5
+2026-01-08T17:46:09.975656+00:00 ubuntu-srv01 groupadd[1290]: new group: name=user5, GID=1005
+2026-01-08T17:46:10.025124+00:00 ubuntu-srv01 useradd[1297]: new user: name=user5, UID=1005, GID=1005, home=/home/user5, shell=/bin/bash, from=/dev/pts/0
+2026-01-08T17:46:17.816705+00:00 ubuntu-srv01 passwd[1310]: pam_unix(passwd:chauthtok): password changed for user5
+2026-01-08T17:46:22.220857+00:00 ubuntu-srv01 chfn[1311]: changed user 'user5' information
+2026-01-08T17:46:23.644624+00:00 ubuntu-srv01 gpasswd[1319]: members of group users set by root to user1,user2,user3,user4,user5
+2026-01-08T17:46:23.648905+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T17:55:01.451089+00:00 ubuntu-srv01 CRON[1332]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T17:55:01.481961+00:00 ubuntu-srv01 CRON[1332]: pam_unix(cron:session): session closed for user root
+2026-01-08T18:03:11.838660+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/bin/tail -n 50 /var/log/auth.log
+2026-01-08T18:03:11.888264+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-08T18:03:11.905163+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-08T18:05:01.513763+00:00 ubuntu-srv01 CRON[1346]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T18:05:01.521674+00:00 ubuntu-srv01 CRON[1346]: pam_unix(cron:session): session closed for user root
+2026-01-08T18:08:41.438864+00:00 ubuntu-srv01 systemd-logind[1360]: New seat seat0.
+2026-01-08T18:08:41.442495+00:00 ubuntu-srv01 systemd-logind[1360]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-01-08T18:08:41.442785+00:00 ubuntu-srv01 systemd-logind[1360]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-01-08T18:08:41.444699+00:00 ubuntu-srv01 systemd-logind[1360]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-01-08T18:08:41.451558+00:00 ubuntu-srv01 systemd-logind[1360]: New session 1 of user bril.
+2026-01-08T18:15:01.546528+00:00 ubuntu-srv01 CRON[1370]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T18:15:01.602804+00:00 ubuntu-srv01 CRON[1370]: pam_unix(cron:session): session closed for user root
+2026-01-08T18:17:01.604440+00:00 ubuntu-srv01 CRON[1374]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T18:17:01.675948+00:00 ubuntu-srv01 CRON[1374]: pam_unix(cron:session): session closed for user root
+2026-01-08T18:25:01.706456+00:00 ubuntu-srv01 CRON[1383]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T18:25:01.742120+00:00 ubuntu-srv01 CRON[1383]: pam_unix(cron:session): session closed for user root
+2026-01-08T18:35:01.764822+00:00 ubuntu-srv01 CRON[1392]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T18:35:01.817988+00:00 ubuntu-srv01 CRON[1392]: pam_unix(cron:session): session closed for user root
+2026-01-08T18:45:01.825474+00:00 ubuntu-srv01 CRON[1421]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T18:45:01.854967+00:00 ubuntu-srv01 CRON[1421]: pam_unix(cron:session): session closed for user root
+2026-01-08T18:56:14.989138+00:00 ubuntu-srv01 CRON[1429]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T18:56:14.993668+00:00 ubuntu-srv01 CRON[1429]: pam_unix(cron:session): session closed for user root
+2026-01-08T19:05:01.619879+00:00 ubuntu-srv01 CRON[1457]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T19:05:01.684626+00:00 ubuntu-srv01 CRON[1457]: pam_unix(cron:session): session closed for user root
+2026-01-08T19:25:01.616636+00:00 ubuntu-srv01 CRON[1476]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T19:25:01.659050+00:00 ubuntu-srv01 CRON[1476]: pam_unix(cron:session): session closed for user root
+2026-01-08T19:35:01.703113+00:00 ubuntu-srv01 CRON[1486]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T19:35:01.749159+00:00 ubuntu-srv01 CRON[1486]: pam_unix(cron:session): session closed for user root
+2026-01-08T19:45:01.795862+00:00 ubuntu-srv01 CRON[1495]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T19:45:01.814720+00:00 ubuntu-srv01 CRON[1495]: pam_unix(cron:session): session closed for user root
+2026-01-08T19:55:01.767278+00:00 ubuntu-srv01 CRON[1604]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T19:55:01.828776+00:00 ubuntu-srv01 CRON[1604]: pam_unix(cron:session): session closed for user root
+2026-01-08T20:05:01.044725+00:00 ubuntu-srv01 CRON[1614]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-08T20:05:01.067768+00:00 ubuntu-srv01 CRON[1614]: pam_unix(cron:session): session closed for user root
+2026-01-09T12:35:01.442833+00:00 ubuntu-srv01 CRON[1710]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T12:35:01.475589+00:00 ubuntu-srv01 CRON[1710]: pam_unix(cron:session): session closed for user root
+2026-01-09T12:43:01.281931+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/bin/less /var/log/auth.log
+2026-01-09T12:43:01.363903+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T12:45:01.510412+00:00 ubuntu-srv01 CRON[1730]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T12:45:01.544865+00:00 ubuntu-srv01 CRON[1730]: pam_unix(cron:session): session closed for user root
+2026-01-09T12:46:35.804850+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T12:46:51.573747+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/bin/less /var/log/auth.log
+2026-01-09T12:46:51.576438+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T12:47:11.826523+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T12:47:49.419748+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril/one ; USER=root ; COMMAND=/usr/bin/less /var/log/auth.log
+2026-01-09T12:47:49.422753+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T12:52:56.236751+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T12:55:01.604038+00:00 ubuntu-srv01 CRON[1753]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T12:55:01.656266+00:00 ubuntu-srv01 CRON[1753]: pam_unix(cron:session): session closed for user root
+2026-01-09T13:25:01.132877+00:00 ubuntu-srv01 CRON[1766]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T13:25:01.151092+00:00 ubuntu-srv01 CRON[1766]: pam_unix(cron:session): session closed for user root
+2026-01-09T13:35:01.195138+00:00 ubuntu-srv01 CRON[1816]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T13:35:01.213457+00:00 ubuntu-srv01 CRON[1816]: pam_unix(cron:session): session closed for user root
+2026-01-09T13:45:01.196818+00:00 ubuntu-srv01 CRON[1843]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T13:45:01.240432+00:00 ubuntu-srv01 CRON[1843]: pam_unix(cron:session): session closed for user root
+2026-01-09T14:15:56.454527+00:00 ubuntu-srv01 CRON[1857]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T14:15:56.454981+00:00 ubuntu-srv01 CRON[1857]: pam_unix(cron:session): session closed for user root
+2026-01-09T14:17:01.471992+00:00 ubuntu-srv01 CRON[1893]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T14:17:01.493024+00:00 ubuntu-srv01 CRON[1893]: pam_unix(cron:session): session closed for user root
+2026-01-09T15:25:01.193080+00:00 ubuntu-srv01 CRON[1921]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T15:25:01.213368+00:00 ubuntu-srv01 CRON[1921]: pam_unix(cron:session): session closed for user root
+2026-01-09T15:35:01.244452+00:00 ubuntu-srv01 CRON[1952]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T15:35:01.278518+00:00 ubuntu-srv01 CRON[1952]: pam_unix(cron:session): session closed for user root
+2026-01-09T16:05:10.361060+00:00 ubuntu-srv01 CRON[1970]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T16:05:10.735304+00:00 ubuntu-srv01 CRON[1970]: pam_unix(cron:session): session closed for user root
+2026-01-09T16:15:01.788554+00:00 ubuntu-srv01 CRON[1984]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T16:15:01.827142+00:00 ubuntu-srv01 CRON[1984]: pam_unix(cron:session): session closed for user root
+2026-01-09T16:17:01.858908+00:00 ubuntu-srv01 CRON[1988]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T16:17:01.889612+00:00 ubuntu-srv01 CRON[1988]: pam_unix(cron:session): session closed for user root
+2026-01-09T16:25:01.993533+00:00 ubuntu-srv01 CRON[1996]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T16:25:02.016924+00:00 ubuntu-srv01 CRON[1996]: pam_unix(cron:session): session closed for user root
+2026-01-09T16:35:01.053886+00:00 ubuntu-srv01 CRON[2014]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T16:35:01.088542+00:00 ubuntu-srv01 CRON[2014]: pam_unix(cron:session): session closed for user root
+2026-01-09T16:45:01.199139+00:00 ubuntu-srv01 CRON[2023]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T16:45:01.225071+00:00 ubuntu-srv01 CRON[2023]: pam_unix(cron:session): session closed for user root
+2026-01-09T16:55:01.333238+00:00 ubuntu-srv01 CRON[2033]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T16:55:01.358646+00:00 ubuntu-srv01 CRON[2033]: pam_unix(cron:session): session closed for user root
+2026-01-09T17:05:01.440382+00:00 ubuntu-srv01 CRON[2041]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T17:05:01.469294+00:00 ubuntu-srv01 CRON[2041]: pam_unix(cron:session): session closed for user root
+2026-01-09T17:15:01.501027+00:00 ubuntu-srv01 CRON[2051]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T17:15:01.527657+00:00 ubuntu-srv01 CRON[2051]: pam_unix(cron:session): session closed for user root
+2026-01-09T17:17:01.548373+00:00 ubuntu-srv01 CRON[2056]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T17:17:01.573981+00:00 ubuntu-srv01 CRON[2056]: pam_unix(cron:session): session closed for user root
+2026-01-09T17:25:01.603595+00:00 ubuntu-srv01 CRON[2065]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T17:25:01.629078+00:00 ubuntu-srv01 CRON[2065]: pam_unix(cron:session): session closed for user root
+2026-01-09T17:31:30.656508+00:00 ubuntu-srv01 sshd[2083]: Invalid user user from 192.168.56.1 port 52302
+2026-01-09T17:31:31.739666+00:00 ubuntu-srv01 sshd[2083]: Failed none for invalid user user from 192.168.56.1 port 52302 ssh2
+2026-01-09T17:32:15.899949+00:00 ubuntu-srv01 sshd[2083]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T17:32:15.903552+00:00 ubuntu-srv01 sshd[2083]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1 
+2026-01-09T17:32:18.651832+00:00 ubuntu-srv01 sshd[2083]: Failed password for invalid user user from 192.168.56.1 port 52302 ssh2
+2026-01-09T17:32:20.326129+00:00 ubuntu-srv01 sshd[2083]: pam_unix(sshd:auth): check pass; user unknown
+2026-01-09T17:32:22.430878+00:00 ubuntu-srv01 sshd[2083]: Failed password for invalid user user from 192.168.56.1 port 52302 ssh2
+2026-01-09T17:32:23.556378+00:00 ubuntu-srv01 sshd[2083]: Connection reset by invalid user user 192.168.56.1 port 52302 [preauth]
+2026-01-09T17:32:23.557370+00:00 ubuntu-srv01 sshd[2083]: PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1 
+2026-01-09T17:32:35.241938+00:00 ubuntu-srv01 sshd[2085]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:32:37.092556+00:00 ubuntu-srv01 sshd[2085]: Failed password for user1 from 192.168.56.1 port 55762 ssh2
+2026-01-09T17:32:54.185228+00:00 ubuntu-srv01 sshd[2085]: message repeated 2 times: [ Failed password for user1 from 192.168.56.1 port 55762 ssh2]
+2026-01-09T17:32:56.200582+00:00 ubuntu-srv01 sshd[2085]: Connection reset by authenticating user user1 192.168.56.1 port 55762 [preauth]
+2026-01-09T17:32:56.200954+00:00 ubuntu-srv01 sshd[2085]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:34:44.428952+00:00 ubuntu-srv01 sshd[2088]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:34:46.163113+00:00 ubuntu-srv01 sshd[2088]: Failed password for user1 from 192.168.56.1 port 55374 ssh2
+2026-01-09T17:34:58.372901+00:00 ubuntu-srv01 sshd[2088]: message repeated 2 times: [ Failed password for user1 from 192.168.56.1 port 55374 ssh2]
+2026-01-09T17:35:00.516650+00:00 ubuntu-srv01 sshd[2088]: Connection reset by authenticating user user1 192.168.56.1 port 55374 [preauth]
+2026-01-09T17:35:00.517179+00:00 ubuntu-srv01 sshd[2088]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:35:01.729204+00:00 ubuntu-srv01 CRON[2090]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T17:35:01.758867+00:00 ubuntu-srv01 CRON[2090]: pam_unix(cron:session): session closed for user root
+2026-01-09T17:35:32.702426+00:00 ubuntu-srv01 sshd[2094]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:35:35.168997+00:00 ubuntu-srv01 sshd[2094]: Failed password for user1 from 192.168.56.1 port 63877 ssh2
+2026-01-09T17:35:49.322854+00:00 ubuntu-srv01 sshd[2094]: message repeated 2 times: [ Failed password for user1 from 192.168.56.1 port 63877 ssh2]
+2026-01-09T17:35:49.565193+00:00 ubuntu-srv01 sshd[2094]: Connection reset by authenticating user user1 192.168.56.1 port 63877 [preauth]
+2026-01-09T17:35:49.569139+00:00 ubuntu-srv01 sshd[2094]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:36:21.494515+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/less /var/log/auth.log
+2026-01-09T17:36:21.533680+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T17:39:38.247035+00:00 ubuntu-srv01 sshd[2100]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:39:40.819165+00:00 ubuntu-srv01 sshd[2100]: Failed password for user1 from 192.168.56.1 port 51705 ssh2
+2026-01-09T17:39:55.180394+00:00 ubuntu-srv01 sshd[2100]: message repeated 2 times: [ Failed password for user1 from 192.168.56.1 port 51705 ssh2]
+2026-01-09T17:39:56.731472+00:00 ubuntu-srv01 sshd[2100]: Connection reset by authenticating user user1 192.168.56.1 port 51705 [preauth]
+2026-01-09T17:39:56.732194+00:00 ubuntu-srv01 sshd[2100]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.56.1  user=user1
+2026-01-09T17:40:05.016198+00:00 ubuntu-srv01 sshd[2105]: Accepted password for user1 from 192.168.56.1 port 64584 ssh2
+2026-01-09T17:40:05.028555+00:00 ubuntu-srv01 sshd[2105]: pam_unix(sshd:session): session opened for user user1(uid=1001) by user1(uid=0)
+2026-01-09T17:40:05.137499+00:00 ubuntu-srv01 systemd-logind[1360]: New session 41 of user user1.
+2026-01-09T17:40:05.314159+00:00 ubuntu-srv01 (systemd): pam_unix(systemd-user:session): session opened for user user1(uid=1001) by user1(uid=0)
+2026-01-09T17:42:05.626357+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T17:42:33.329448+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/grep 'accepted password' /var/log/auth.log
+2026-01-09T17:42:33.332122+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T17:42:33.339009+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T17:43:41.889008+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/grep 'accepted password' /var/log/auth.log
+2026-01-09T17:43:41.889762+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T17:43:41.899886+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T17:45:01.790892+00:00 ubuntu-srv01 CRON[2276]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T17:45:01.840243+00:00 ubuntu-srv01 CRON[2276]: pam_unix(cron:session): session closed for user root
+2026-01-09T17:50:13.095706+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/grep 'Failed Password' /var/log/auth.log
+2026-01-09T17:50:13.145164+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T17:50:13.145331+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T17:50:26.819313+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/grep 'Failed password' /var/log/auth.log
+2026-01-09T17:50:26.821088+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T17:50:26.840748+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T17:50:45.020071+00:00 ubuntu-srv01 sudo:     bril : TTY=tty1 ; PWD=/home/bril ; USER=root ; COMMAND=/usr/bin/grep 'Accepted password' /var/log/auth.log
+2026-01-09T17:50:45.022110+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session opened for user root(uid=0) by bril(uid=1000)
+2026-01-09T17:50:45.030521+00:00 ubuntu-srv01 sudo: pam_unix(sudo:session): session closed for user root
+2026-01-09T17:55:01.860763+00:00 ubuntu-srv01 CRON[2296]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T17:55:01.893683+00:00 ubuntu-srv01 CRON[2296]: pam_unix(cron:session): session closed for user root
+2026-01-09T18:02:45.336525+00:00 ubuntu-srv01 sshd[2311]: Accepted password for bril from 192.168.56.102 port 41148 ssh2
+2026-01-09T18:02:45.339386+00:00 ubuntu-srv01 sshd[2311]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T18:02:45.345003+00:00 ubuntu-srv01 systemd-logind[1360]: New session 45 of user bril.
+2026-01-09T18:02:45.966316+00:00 ubuntu-srv01 sshd[2368]: Received disconnect from 192.168.56.102 port 41148:11: disconnected by user
+2026-01-09T18:02:45.980417+00:00 ubuntu-srv01 sshd[2368]: Disconnected from user bril 192.168.56.102 port 41148
+2026-01-09T18:02:45.980885+00:00 ubuntu-srv01 systemd-logind[1360]: Session 45 logged out. Waiting for processes to exit.
+2026-01-09T18:02:45.981040+00:00 ubuntu-srv01 sshd[2311]: pam_unix(sshd:session): session closed for user bril
+2026-01-09T18:02:45.983591+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 45.
+2026-01-09T18:05:01.933166+00:00 ubuntu-srv01 CRON[2370]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T18:05:01.962519+00:00 ubuntu-srv01 CRON[2370]: pam_unix(cron:session): session closed for user root
+2026-01-09T18:12:36.841769+00:00 ubuntu-srv01 sshd[2225]: Received disconnect from 192.168.56.1 port 64584:11: disconnected by user
+2026-01-09T18:12:36.860252+00:00 ubuntu-srv01 sshd[2225]: Disconnected from user user1 192.168.56.1 port 64584
+2026-01-09T18:12:36.860682+00:00 ubuntu-srv01 sshd[2105]: pam_unix(sshd:session): session closed for user user1
+2026-01-09T18:12:36.889531+00:00 ubuntu-srv01 systemd-logind[1360]: Session 41 logged out. Waiting for processes to exit.
+2026-01-09T18:12:36.892866+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 41.
+2026-01-09T18:13:28.621182+00:00 ubuntu-srv01 sshd[2392]: Accepted password for bril from 192.168.56.1 port 50108 ssh2
+2026-01-09T18:13:28.633807+00:00 ubuntu-srv01 sshd[2392]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T18:13:28.660640+00:00 ubuntu-srv01 systemd-logind[1360]: New session 47 of user bril.
+2026-01-09T18:13:30.387865+00:00 ubuntu-srv01 sshd[2449]: Received disconnect from 192.168.56.1 port 50108:11: disconnected by user
+2026-01-09T18:13:30.436250+00:00 ubuntu-srv01 sshd[2449]: Disconnected from user bril 192.168.56.1 port 50108
+2026-01-09T18:13:30.437547+00:00 ubuntu-srv01 sshd[2392]: pam_unix(sshd:session): session closed for user bril
+2026-01-09T18:13:30.438577+00:00 ubuntu-srv01 systemd-logind[1360]: Session 47 logged out. Waiting for processes to exit.
+2026-01-09T18:13:30.439567+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 47.
+2026-01-09T18:15:01.990868+00:00 ubuntu-srv01 CRON[2451]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T18:15:02.026024+00:00 ubuntu-srv01 CRON[2451]: pam_unix(cron:session): session closed for user root
+2026-01-09T18:16:06.961931+00:00 ubuntu-srv01 sshd[2458]: Accepted password for bril from 192.168.56.1 port 58333 ssh2
+2026-01-09T18:16:07.019851+00:00 ubuntu-srv01 sshd[2458]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T18:16:07.020277+00:00 ubuntu-srv01 systemd-logind[1360]: New session 49 of user bril.
+2026-01-09T18:16:09.158627+00:00 ubuntu-srv01 sshd[2515]: Received disconnect from 192.168.56.1 port 58333:11: disconnected by user
+2026-01-09T18:16:09.213465+00:00 ubuntu-srv01 sshd[2515]: Disconnected from user bril 192.168.56.1 port 58333
+2026-01-09T18:16:09.214891+00:00 ubuntu-srv01 sshd[2458]: pam_unix(sshd:session): session closed for user bril
+2026-01-09T18:16:09.218008+00:00 ubuntu-srv01 systemd-logind[1360]: Session 49 logged out. Waiting for processes to exit.
+2026-01-09T18:16:09.218468+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 49.
+2026-01-09T18:16:25.289541+00:00 ubuntu-srv01 sshd[2517]: Accepted password for bril from 192.168.56.1 port 60247 ssh2
+2026-01-09T18:16:25.298550+00:00 ubuntu-srv01 sshd[2517]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T18:16:25.321972+00:00 ubuntu-srv01 systemd-logind[1360]: New session 50 of user bril.
+2026-01-09T18:16:26.127723+00:00 ubuntu-srv01 sshd[2565]: Received disconnect from 192.168.56.1 port 60247:11: disconnected by user
+2026-01-09T18:16:26.129515+00:00 ubuntu-srv01 sshd[2565]: Disconnected from user bril 192.168.56.1 port 60247
+2026-01-09T18:16:26.136409+00:00 ubuntu-srv01 sshd[2517]: pam_unix(sshd:session): session closed for user bril
+2026-01-09T18:16:26.154409+00:00 ubuntu-srv01 systemd-logind[1360]: Session 50 logged out. Waiting for processes to exit.
+2026-01-09T18:16:26.165745+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 50.
+2026-01-09T18:17:01.044504+00:00 ubuntu-srv01 CRON[2567]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-01-09T18:17:01.072338+00:00 ubuntu-srv01 CRON[2567]: pam_unix(cron:session): session closed for user root
+2026-01-09T18:22:30.102624+00:00 ubuntu-srv01 sshd[2576]: Accepted password for bril from 192.168.56.1 port 63487 ssh2
+2026-01-09T18:22:30.174446+00:00 ubuntu-srv01 sshd[2576]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T18:22:30.175552+00:00 ubuntu-srv01 systemd-logind[1360]: New session 52 of user bril.
+2026-01-09T18:22:32.003316+00:00 ubuntu-srv01 sshd[2633]: Received disconnect from 192.168.56.1 port 63487:11: disconnected by user
+2026-01-09T18:22:32.032467+00:00 ubuntu-srv01 sshd[2633]: Disconnected from user bril 192.168.56.1 port 63487
+2026-01-09T18:22:32.036575+00:00 ubuntu-srv01 sshd[2576]: pam_unix(sshd:session): session closed for user bril
+2026-01-09T18:22:32.038634+00:00 ubuntu-srv01 systemd-logind[1360]: Session 52 logged out. Waiting for processes to exit.
+2026-01-09T18:22:32.046442+00:00 ubuntu-srv01 systemd-logind[1360]: Removed session 52.
+2026-01-09T18:24:58.784391+00:00 ubuntu-srv01 sshd[2636]: Accepted password for bril from 192.168.56.1 port 51658 ssh2
+2026-01-09T18:24:58.789512+00:00 ubuntu-srv01 sshd[2636]: pam_unix(sshd:session): session opened for user bril(uid=1000) by bril(uid=0)
+2026-01-09T18:24:58.795391+00:00 ubuntu-srv01 systemd-logind[1360]: New session 53 of user bril.
