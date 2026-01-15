@@ -1,4 +1,7 @@
 import re
+from collections import defaultdict
+from datetime import datetime
+
 
 LOG_FILE = r"logs\linux\linux_auth.log"
 
@@ -55,10 +58,25 @@ def parse_linux_auth_log():
     return events
 
 
+
+def group_events_by_ip(events):
+    grouped = defaultdict(list)
+
+    for event in events:
+        if event["source_ip"]:
+            grouped[event["source_ip"]].append(event)
+
+    return grouped
+
+def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
+    
+
+
+
+
 if __name__ == "__main__":
     parsed_events = parse_linux_auth_log()
     print(f"Parsed {len(parsed_events)} Linux authentication events")
 
     for event in parsed_events[:5]:
         print(event)
-
