@@ -57,7 +57,7 @@ def parse_linux_auth_log():
 
     return events
 
-
+#SOURCE GROUP BY IP 
 
 def group_events_by_ip(events):
     grouped = defaultdict(list)
@@ -69,11 +69,13 @@ def group_events_by_ip(events):
     return grouped
 
 def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
-    
+    pass
 
 
 
 
+
+#THE MAIN BLOCK EXECUTION 
 if __name__ == "__main__":
     parsed_events = parse_linux_auth_log()
     print(f"Parsed {len(parsed_events)} Linux authentication events")
