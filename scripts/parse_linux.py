@@ -10,11 +10,13 @@ TIMESTAMP_PATTERN = re.compile(
 )
 
 FAILED_PASS = re.compile(
-    r'sshd\[(?P<pid>\d+)\]:\s+Failed password for\s+(?P<user>\S+)\s+from\s+(?P<ip>\d+\.\d+\.\d+\.\d+)'
+    r'sshd\[\d+\]:\s+Failed password for(?: invalid user)?\s+(?P<user>\S+)'
+    r'\s+from\s+(?P<ip>\d+\.\d+\.\d+\.\d+)'
 )
 
 SUCCESS_PASS = re.compile(
-    r'sshd\[(?P<pid>\d+)\]:\s+Accepted password for\s+(?P<user>\S+)\s+from\s+(?P<ip>\d+\.\d+\.\d+\.\d+)'
+    r'sshd\[\d+\]:\s+Accepted password for\s+(?P<user>\S+)'
+    r'\s+from\s+(?P<ip>\d+\.\d+\.\d+\.\d+)'
 )
 
 def parse_linux_auth_log():
