@@ -2,22 +2,25 @@ import re
 from collections import defaultdict
 from datetime import datetime
 
-
 LOG_FILE = r"logs\linux\linux_auth.log"
 
+###regex 
 TIMESTAMP_PATTERN = re.compile(
-    r'^(?P<timestamp>\S+)'
+    r'^(?P<timestamp>\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2})'
 )
-
 FAILED_PASS = re.compile(
     r'sshd\[\d+\]:\s+Failed password for(?: invalid user)?\s+(?P<user>\S+)'
     r'\s+from\s+(?P<ip>\d+\.\d+\.\d+\.\d+)'
 )
-
 SUCCESS_PASS = re.compile(
     r'sshd\[\d+\]:\s+Accepted password for\s+(?P<user>\S+)'
     r'\s+from\s+(?P<ip>\d+\.\d+\.\d+\.\d+)'
 )
+####
+
+###parse the timestamp 
+def parse_timestamp(ts_str):
+    return datetime.fromisoformat(ts_str)
 
 def parse_linux_auth_log():
     events = []
@@ -26,7 +29,7 @@ def parse_linux_auth_log():
         for line in linux_log:
             line = line.strip()
 
-            # Extract timestamp (best-effort)
+            # Extract timestamp 
             ts_match = TIMESTAMP_PATTERN.search(line)
             timestamp = ts_match.group("timestamp") if ts_match else None
 
@@ -61,26 +64,46 @@ def parse_linux_auth_log():
 
 #SOURCE GROUP BY IP 
 
-def group_events_by_ip(events):
-    grouped = defaultdict(list)
-
+def group_IP_to_event(events):
+    grouped = defaultdict()
+# information being extracted: the source ip and the line of log matching it 
     for event in events:
-        if event["source_ip"]:
-            grouped[event["source_ip"]].append(event)
+        if ['source_ip'] in event:
+            grouped[event['source_ip']].append(event)
 
-    return grouped
+        #we want it to be in a dictionary format 
+        {source_ip: events }
+
+
 
 def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
-    pass
+    alerts = []
+
+    
+    
+   
+    
+    
+    
+    
+    if 'dependancy' count <= 5:
+        alerts.append({
+        'alert type': 'SSH_BRUTE_FORCE',
+        'source_IP' : ip,
+        'failed_attempts':count,
+        'first_seen': start_time
+        'last_seen': faliures
+        })
+        break 
+        
+        
 
 
 
 
 
-#THE MAIN BLOCK EXECUTION 
-if __name__ == "__main__":
-    parsed_events = parse_linux_auth_log()
-    print(f"Parsed {len(parsed_events)} Linux authentication events")
 
-    for event in parsed_events[:5]:
-        print(event)
+if __name__ == '__main__':
+    events = parse_linux_auth_log()
+    print(f'[+] Parsed {len(events)} Linux authentication events')
+
