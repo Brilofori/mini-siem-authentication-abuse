@@ -70,40 +70,59 @@ def group_IP_to_event(events):
     for event in events:
         if ['source_ip'] in event:
             grouped[event['source_ip']].append(event)
-
-        #we want it to be in a dictionary format 
-        {source_ip: events }
-
+    
+    return grouped
 
 
 def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
-    alerts = []
-
-    
-    
+   """
+   Docstring for detect_ssh_bruteforce
    
-    
-    
-    
-    
-    if 'dependancy' count <= 5:
-        alerts.append({
-        'alert type': 'SSH_BRUTE_FORCE',
-        'source_IP' : ip,
-        'failed_attempts':count,
-        'first_seen': start_time
-        'last_seen': faliures
-        })
-        break 
-        
-        
+   :param grouped_events: Description
+   :param threshold: Description
+   :param window_minutes: Description
+
+        timestamp:  "platform": "linux",
+                    "host": "ubuntu-srv01",
+                    "username": success.group("user"),
+                    "source_ip": success.group("ip"),
+                    "event_type": "authentication",
+                    "outcome": "success",
+                    "raw_event_id": "sshd"
+   """
+    #lets extract
+    #timestamp, source ip, how many times an alerts was attributed to an event,
+    empty = []
+    for key1, value1 in grouped_events.items():
+        if value1['outcome'] == 'failure':
+            empty.append(value1)
 
 
+    for            
+           
+   
+
+
+
+    output = {
+        'alert type':'brute force',
+        'source ip':{source_IP},
+        'failed attempts':{failed_attempts},
+        'first seen':{first_seen},
+        'last seen':{last_seen}
+    }
+
+        
+        
+  
+        
 
 
 
 
 if __name__ == '__main__':
-    events = parse_linux_auth_log()
+    events = parse_linux_auth_log(
+    )
     print(f'[+] Parsed {len(events)} Linux authentication events')
-
+    
+    grouped = group_IP_to_event(events)
