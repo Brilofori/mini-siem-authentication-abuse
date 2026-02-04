@@ -74,6 +74,7 @@ def group_IP_to_event(events):
     return grouped
 
 
+# Detection
 def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
    """
    Docstring for detect_ssh_bruteforce
@@ -92,18 +93,26 @@ def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
    """
     #lets extract
     #timestamp, source ip, how many times an alerts was attributed to an event,
-    empty = []
-    for key1, value1 in grouped_events.items():
-        if value1['outcome'] == 'failure':
-            empty.append(value1)
-
-
-    for            
+    alerts = []
+   
+    for ip, events in grouped_events.items():
+    
+        failures = []
+        for e in events:
+            if e['outcome'] == 'faliure':
+                failures.append(e)
            
    
+    failures.sort(key=lambda e: e['timestamp'])
+    
+    for i in range(len(failures)):
+       start_time  = failures[i]['timestamp']
+       count  = 1
+
+    
 
 
-
+    #the expected output 
     output = {
         'alert type':'brute force',
         'source ip':{source_IP},
