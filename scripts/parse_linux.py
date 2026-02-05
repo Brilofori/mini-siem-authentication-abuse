@@ -122,12 +122,6 @@ def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
     }
 
         
-        
-  
-        
-
-
-
 
 if __name__ == '__main__':
     events = parse_linux_auth_log(
