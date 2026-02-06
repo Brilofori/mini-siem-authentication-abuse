@@ -6,10 +6,9 @@ This project implements a lightweight, detection-focused Mini-SIEM designed to i
 Rather than relying on commercial SIEM platforms or dashboards, this project focuses on understanding how raw system logs can be used to reconstruct attacker behavior and make defensible security decisions.
 
 
-## Problem  to address
-Modern environments generate authentication logs across many systems, but no single host provides enough context to detect credential abuse on its own.
+## Aim
 
-This project addresses that gap by:
+This project addresses:
 - Normalizing authentication events from different operating systems
 - Correlating related events across systems
 - Detecting suspicious authentication patterns indicative of credential abuse
