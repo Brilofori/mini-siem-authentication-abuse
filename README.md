@@ -1,7 +1,7 @@
 # Mini-SIEM: Cross-Platform Authentication Abuse Detection
 
 ## Overview
-This project implements a lightweight, detection-focused Mini-SIEM designed to identify credential abuse by correlating authentication events across Linux and Windows systems.
+This project implements a  detection-focused Mini-SIEM designed to identify credential abuse by correlating authentication events across Linux and Windows systems.
 
 Rather than relying on commercial SIEM platforms or dashboards, this project focuses on understanding how raw system logs can be used to reconstruct attacker behavior and make defensible security decisions.
 
