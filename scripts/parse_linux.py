@@ -37,6 +37,9 @@ def parse_linux_auth_log():
             success = SUCCESS_PASS.search(line)
 
             if failed:
+                if timestamp is None:
+                    print(f"no parsabable timestamp")
+                    continue
                 events.append({
                     "timestamp": timestamp,
                     "platform": "linux",
@@ -49,6 +52,9 @@ def parse_linux_auth_log():
                 })
 
             elif success:
+                if timestamp is None:
+                    print(f"no parsabable timestamp")
+                    continue
                 events.append({
                     "timestamp": timestamp,
                     "platform": "linux",
@@ -65,7 +71,7 @@ def parse_linux_auth_log():
 #SOURCE GROUP BY IP 
 
 def group_IP_to_event(events):
-    grouped = defaultdict()
+    grouped = defaultdict(list)
 # information being extracted: the source ip and the line of log matching it 
     for event in events:
         if ['source_ip'] in event:
@@ -93,7 +99,8 @@ def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
    """
     #lets extract
     #timestamp, source ip, how many times an alerts was attributed to an event,
-
+    alerts = []
+   
     for ip, events in grouped_events.items():
     
         failures = []
@@ -107,6 +114,8 @@ def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
     for i in range(len(failures)):
        start_time  = failures[i]['timestamp']
        count  = 1
+    
+    
 
     
 
@@ -121,11 +130,8 @@ def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
     }'''
 
         
-<<<<<<< HEAD
-=======
         
 
->>>>>>> 944e413 (error handling in oarsing statements)
 
 if __name__ == '__main__':
     events = parse_linux_auth_log(
