@@ -93,8 +93,7 @@ def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
    """
     #lets extract
     #timestamp, source ip, how many times an alerts was attributed to an event,
-    alerts = []
-   
+
     for ip, events in grouped_events.items():
     
         failures = []
@@ -113,15 +112,20 @@ def detect_ssh_bruteforce(grouped_events, threshold = 5, window_minutes = 5):
 
 
     #the expected output 
-    output = {
+    '''output = {
         'alert type':'brute force',
         'source ip':{source_IP},
         'failed attempts':{failed_attempts},
         'first seen':{first_seen},
         'last seen':{last_seen}
-    }
+    }'''
 
         
+<<<<<<< HEAD
+=======
+        
+
+>>>>>>> 944e413 (error handling in oarsing statements)
 
 if __name__ == '__main__':
     events = parse_linux_auth_log(
