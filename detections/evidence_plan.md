@@ -61,7 +61,7 @@
 
 ### Target Machines
 
-- Linux VM and Windows VM
+- Linux VM 
 
 
 ### Actions
