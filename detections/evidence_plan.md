@@ -1,83 +1,72 @@
-# Phase 1 — SSH Brute Force (Linux)
+## Evidence & Attack Simulation
+
+The following lab scenarios were performed to validate detection logic.
+
+---
+
+# Phase 1 — SSH Brute Force (Implemented)
 
 ### Target Machine
-- Linux VM
-
+- Ubuntu Linux VM
 
 ### Source
-- Personal laptop (or Windows VM)
-
+- Personal laptop or secondary VM
 
 ### Actions
-
-- Attempt SSH login with an incorrect password
+- Attempt SSH login using an incorrect password
 - Repeat 6–10 times
-- Use the same username
+- Same username
 - Same source IP
-- Short time window (1–2 minutes)
-
+- Within 1–2 minutes
 
 ### Expected Evidence
-
-- Multiple Failed password entries in /var/log/auth.log
-- Same IP
-- Same user
-- Tight timestamps
+- Multiple `Failed password` entries in `/var/log/auth.log`
+- Same source IP
+- Same username
+- Closely spaced timestamps
 
 ### Detection Rule Triggered
 - Detection Rule 1 — SSH Brute Force
 
+---
 
+# Phase 2 — Credential Spraying (Planned)
 
-# Phase 2 — Password Spraying
-
-### 3 Target Machine
-- Linux VM or Windows VM
-
+### Target Machine
+- Ubuntu Linux VM
 
 ### Actions
-
-- Create 3–5 users
-- Attempt login once per user
+- Create 3–5 user accounts
+- Attempt SSH login once per user
 - Same source IP
-- All or mostly failures
+- Mostly failed attempts
 - Within 5–10 minutes
 
-
 ### Expected Evidence
-
 - Failed login attempts
-- Multiple usernames
+- Multiple distinct usernames
 - Same source IP
 
+### Detection Rule
+- Detection Rule 2 — Credential Spraying (Planned)
 
-### Detection Rule Triggered
+---
 
-- Detection Rule 2 — Password Spraying
+# Phase 3 — Success After Repeated Failures (Planned)
 
-
-
-# Phase 3 — Success After Failure (Cross-Platform)
-
-### Target Machines
-
-- Linux VM 
-
+### Target Machine
+- Ubuntu Linux VM
 
 ### Actions
-
-- Perform several failed logins from same source
+- Perform several failed SSH login attempts from the same source IP
 - Then perform a successful login
 - Within 10–15 minutes
-- Same source IP
-
 
 ### Expected Evidence
-- Failed auth events
-- Followed by success
-- Across different systems
+- Multiple failed authentication events
+- Followed by a successful login
+- Same source IP
 
-
-### Detection Rule Triggered
-- Detection Rule 3 — Success After Failure
+### Detection Rule
+- Detection Rule 3 — Success After Failure (Planned)
 

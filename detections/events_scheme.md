@@ -1,41 +1,41 @@
-Normalized Authentication Event Schema
-=====================================
+## Normalized Authentication Event Schema
 
-Each authentication event from any platform is normalized into the following structure.
+All parsed SSH authentication events are normalized into a consistent internal structure.
 
-Fields
-------
+The schema is designed to be platform-agnostic, allowing future support for additional authentication sources (e.g., Windows Security logs).
 
-timestamp
-- UTC timestamp of the event
-- Type: datetime
+---
 
-platform
-- Originating operating system
-- Values: linux | windows
+### Fields
 
-host
-- Hostname of the system where the event occurred
-- Example: ubuntu-srv01, win10-client
+**timestamp**
+- UTC timestamp of the event  
+- Type: `datetime`
 
-username
-- Account involved in the authentication attempt
-- May be "unknown" if user does not exist
+**platform**
+- Originating operating system  
+- Current value: `linux`
 
-source_ip
+**host**
+- Hostname of the system where the event occurred  
+- Example: `ubuntu-srv01`
+
+**username**
+- Account involved in the authentication attempt  
+- May be `"invalid user"` if the account does not exist
+
+**source_ip**
 - IP address where the authentication attempt originated
-- Null if not available
 
-event_type
-- Category of event
-- Value: authentication
+**event_type**
+- Category of event  
+- Value: `authentication`
 
-outcome
-- Result of the authentication attempt
-- Values: success | failure
+**outcome**
+- Result of the authentication attempt  
+- Values: `success` | `failure`
 
-raw_event_id
-- Native identifier from source logs
-- Examples:
-  - linux: sshd
+**raw_event_id**
+- Native identifier from source logs  
+- Example: `sshd`
 
