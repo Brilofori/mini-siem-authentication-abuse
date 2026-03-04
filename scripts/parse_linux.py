@@ -38,7 +38,7 @@ def parse_linux_auth_log():
 
             if failed:
                 if timestamp is None:
-                    print(f"no parsabable timestamp")
+                    print("no parsabable timestamp")
                     continue
                 events.append({
                     "timestamp": timestamp,
@@ -53,7 +53,7 @@ def parse_linux_auth_log():
 
             elif success:
                 if timestamp is None:
-                    print(f"no parsabable timestamp")
+                    print("no parsabable timestamp")
                     continue
                 events.append({
                     "timestamp": timestamp,
